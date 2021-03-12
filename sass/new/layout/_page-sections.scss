@@ -4,6 +4,7 @@
 
 .main-content {
     min-height: 500px;
+    padding-bottom: 25px;
     &--index {
         .brand-box {
             @media only screen and (max-width: 600px) {
@@ -51,6 +52,9 @@
     }
     .container {
         min-height: 700px;
+        max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        margin: auto;
     }
     &__sidebar {
         flex: 0 0 20%;
@@ -78,6 +82,16 @@
                     flex: 0 0 50%;
                     max-width: 50%;
                 }
+            }
+        }
+    }
+    &__full-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+        .row {
+            >div {
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
     }

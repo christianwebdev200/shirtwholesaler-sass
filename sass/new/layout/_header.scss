@@ -1,6 +1,5 @@
 .navbar {
     margin-bottom: 20px;
-    
     @include respond(tab-port) {
         margin-bottom: 0px !important;
     }
@@ -10,6 +9,9 @@
         height: 100%;
         position: relative;
         padding: 0;
+        max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        margin: auto;
         @include respond(laptop) {
             padding: 0 20px;
         }
@@ -23,7 +25,6 @@
             padding: 0 9px;
         }
     }
-    
     &__filter {
         display: none;
         width: 180px;
@@ -34,39 +35,33 @@
         color: #fff;
         margin: 10px 0 10px 10px;
         background: none;
-        
-    
         @include respond(laptop-s) {
             display: flex;
         }
-    
         @include respond(mobile-lg) {
             padding: 6px 10px;
             width: 150px;
         }
-    
         svg {
             fill: #fff;
             height: 25px;
             width: 25px;
             margin-left: auto;
         }
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
             background-color: #fff;
             color: $color-dark;
-            
             svg {
                 fill: $color-dark;
             }
         }
     }
-    
     &__footer {
         .row {
             width: 100%;
         }
     }
-    
     &__login {
         position: relative;
     }
@@ -238,8 +233,11 @@
         }
     }
     &__footer {
-        background-color: $color-gray;
+        background-color: $color-white;
         display: block;
+        display: block;
+        border-top: 1px solid $color-lightgray11;
+        border-bottom: 1px solid $color-lightgray11;
         @include respond(laptop-s) {
             display: none;
         }
@@ -348,7 +346,8 @@
     &__footer-list {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: center;
         list-style: none;
         @include respond(laptop-s) {
             flex-direction: column;
@@ -363,11 +362,13 @@
         }
     }
     &__footer-item {
+        margin: 0 10px;
         [data-categoryid="318"] {
-            .btn { display: none ;}
+            .btn {
+                display: none;
+            }
         }
     }
-
     &__footer-item:hover .mega-menu {
         display: flex;
         @include respond(laptop-s) {
@@ -393,13 +394,35 @@
     }
     &__footer-link {
         display: block;
-        padding: 14px;
+        padding: 14px 0;
         color: inherit;
         text-decoration: none;
         font-size: 18px;
         cursor: pointer;
         user-select: none;
         text-align: center;
+        color: $color-gray3 !important;
+        font-size: 16px;
+        font-weight: 600;
+        &:after {
+            width: 0;
+            height: 0;
+            content: '';
+            border-top: 5px solid $color-gray3;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            display: inline-block;
+            margin-left: 10px;
+            position: relative;
+            top: -3px;
+        }
+        &:hover {
+            // color: $color-white !important;
+            color: $color-orange;
+            &:after {
+                border-top: 5px solid $color-orange;
+            }
+        }
         @include respond(laptop) {
             font-size: 16px;
             padding: 10px 14px;

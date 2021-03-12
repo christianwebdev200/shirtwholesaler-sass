@@ -1,12 +1,14 @@
 // all colors register in a variables
 // @import "boostrap-min";
 @import "./new/vendors/bootstrap";
+@import "./new/base/typography";
 @import "./new/vendors/glyphicons";
 @import './new/vendors/star-rate-svg';
 @import "./new/utils/colors";
 @import "./new/utils/mixins";
 @import "./new/base/reset";
 @import "./new/utils/helpers";
+@import "./new/layout/shirtwholeseller-quick-settings";
 // @import "./new/layout/legacy.header";
 @import "./new/layout/header";
 @import "./new/components/mega-menu";

@@ -1,11 +1,12 @@
 .footer {
     display: flex;
-    background-color: $color-gray;
-    color: $color-white;
-    padding: 60px 0;
+    background-color: $color-white;
+    color: $color-black !important;
+    padding: 40px 0;
     width: 100%;
     float: left;
     min-height: 700px;
+    border-top: 1px solid $color-lightgray11;
     @include respond(tab-port) {
         padding: 20px 10px;
     }
@@ -65,6 +66,7 @@
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 20px;
+        color: $color-gray4;
         @include respond(mobile-lg) {
             font-size: 18px;
         }
@@ -79,22 +81,22 @@
         font-weight: 300;
     }
     &__list-link {
-        color: $color-light-gray-2;
+        color: $color-gray3;
         @include transition;
         &:hover {
-            color: $color-white;
+            color: $color-black;
             text-decoration: underline;
         }
-        &:before {
-            content: '';
-            width: 0;
-            height: 0;
-            border-left: 7px solid $color-white;
-            border-top: 4px solid transparent;
-            border-bottom: 4px solid transparent;
-            display: inline-block;
-            margin-right: 10px;
-        }
+        // &:before {
+        //     content: '';
+        //     width: 0;
+        //     height: 0;
+        //     border-left: 7px solid $color-white;
+        //     border-top: 4px solid transparent;
+        //     border-bottom: 4px solid transparent;
+        //     display: inline-block;
+        //     margin-right: 10px;
+        // }
     }
     &__payments {
         display: flex;
@@ -152,9 +154,10 @@
     }
     &__credit {
         display: block;
-        text-align: center;
+        text-align: right;
         width: 100%;
         margin-top: 30px;
+        color: $color-lightgray8;
         @include respond(mobile-lg) {
             font-size: 15px;
         }
@@ -198,6 +201,10 @@
             z-index: 5;
         }
     }
+    .container {
+        max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+    }
 }
 
 .flex {
@@ -220,6 +227,13 @@ a {
 }
 
 .box-1-inner {
+    text-align: left;
+    color: $color-gray3;
+    p,
+    a {
+        color: $color-gray3 !important;
+        font-size: 15px !important;
+    }
     @media screen and (max-width: 1200px) {
         max-width: unset !important;
     }
@@ -227,5 +241,19 @@ a {
         // img {
         //   width: 100%;
         // }
+    }
+    h5 {
+        p {
+            text-align: left !important;
+            span {
+                float: none !important;
+                /* display: block; */
+                color: $color-gray3 !important;
+            }
+        }
+        p,
+        span {
+            font-size: 14px !important;
+        }
     }
 }
