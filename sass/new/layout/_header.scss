@@ -418,7 +418,7 @@
         }
         &:hover {
             // color: $color-white !important;
-            color: $color-orange;
+            color: $color-orange !important;
             &:after {
                 border-top: 5px solid $color-orange;
             }
