@@ -488,8 +488,10 @@ img {
 
 .site-center {
     margin: auto;
-    max-width: 1200px;
-    width: 100%;
+    // max-width: 1200px;
+    // width: 100%;
+    max-width: 95%;
+    width: 95%;
 }
 
 .logo-box {
@@ -764,7 +766,6 @@ img {
 //     bottom: -3px;
 //   }
 // }
-
 .sidenav {
     border: 1px solid $color-lightgray;
     margin-bottom: 15px;
@@ -2732,7 +2733,6 @@ img {
     margin-bottom: 25px;
     border: 1px solid $color-lightgray;
     box-sizing: border-box;
-
 }
 
 .checkout-head {
@@ -2922,7 +2922,6 @@ img {
         box-sizing: border-box;
         font-weight: 400;
         color: $color-black;
-
         &::placeholder {
             color: $color-lightgray;
             font-weight: 400;
