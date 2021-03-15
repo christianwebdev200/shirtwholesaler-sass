@@ -18,3 +18,15 @@
         padding: 0;
     }
 }
+
+.brands-products-display {
+    margin: 0;
+    &__result {
+        padding: 0;
+    }
+    &__column {
+        padding-left: 0;
+        padding-right: 0;
+        padding: 10px;
+    }
+}

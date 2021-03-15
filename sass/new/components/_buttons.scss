@@ -29,7 +29,7 @@
     &--help-link {
         display: inline-block;
         padding: 12px 40px;
-        background-color: $color-darkblue;
+        background-color: $color-orange;
         color: $color-white;
     }
     &--tertiary {
@@ -37,7 +37,7 @@
         padding: 15px 50px;
         font-size: 18px;
         border-radius: 3px;
-        background-color: $color-darkblue;
+        background-color: $color-orange;
         color: $color-white;
         justify-content: center;
         @include respond(mobile-lg) {
@@ -215,7 +215,7 @@
         padding: 5px 0;
         text-decoration: underline;
         font-size: 18px;
-        color: $color-darkblue;
+        color: $color-orange;
         &:hover {
             text-decoration: underline;
         }
@@ -231,7 +231,6 @@
     &--track {
         display: flex;
         flex-direction: row;
-        // background-color: $color-darkblue;
         padding: 5px 0 5px 0;
         align-items: center;
         &__icon {
@@ -365,7 +364,7 @@
         justify-content: center;
         color: #fff;
         padding: 16px;
-        background: $color-darkblue;
+        background: $color-orange;
         font-weight: 700;
         border-radius: 4px;
         font-size: 18px;

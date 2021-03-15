@@ -67,7 +67,7 @@
             color: $color-white;
             transform: translateY(-50%);
             content: "⇀";
-            background: $color-darkblue;
+            background: $color-orange;
             height: 30px;
             width: 30px;
             border-radius: 100%;
@@ -78,7 +78,7 @@
             }
         }
         &:hover {
-            color: $color-darkblue;
+            color: $color-orange;
             &::after {
                 opacity: 1;
                 right: 10px;
@@ -90,7 +90,7 @@
         padding: 0;
         margin-top: 10px;
         font-size: 15px;
-        color: $color-darkblue;
+        color: $color-orange;
         font-weight: 600;
         position: relative;
         border-bottom: none;
@@ -156,7 +156,7 @@
             &:hover {
                 font-weight: 600;
                 background: none;
-                color: $color-darkblue;
+                color: $color-orange;
             }
         }
         a {

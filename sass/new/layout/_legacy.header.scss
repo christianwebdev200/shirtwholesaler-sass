@@ -577,7 +577,7 @@ li.mega-menu__sub,
             color: $color-white;
             transform: translateY(-50%);
             content: "⇀";
-            background: $color-darkblue;
+            background: $color-orange;
             height: 30px;
             width: 30px;
             border-radius: 100%;
@@ -585,7 +585,7 @@ li.mega-menu__sub,
             transition: all 300ms ease;
         }
         &:hover {
-            color: $color-darkblue;
+            color: $color-orange;
             &::after {
                 opacity: 1;
                 right: 10px;
@@ -597,7 +597,7 @@ li.mega-menu__sub,
         padding: 0 !important;
         margin-top: 10px !important;
         font-size: 15px !important;
-        color: $color-darkblue !important;
+        color: $color-orange !important;
         font-weight: 600 !important;
         position: relative;
         border-bottom: none !important;
@@ -657,7 +657,7 @@ li.mega-menu__sub,
                 border-bottom: none !important;
             }
             &:hover {
-                color: $color-darkblue;
+                color: $color-orange;
                 font-weight: 600;
                 background: none !important;
                 color: #fff;
@@ -952,7 +952,7 @@ li.mega-menu__sub,
         h1 {
             text-align: left;
             span {
-                color: $color-darkblue;
+                color: $color-orange;
             }
         }
     }
@@ -966,7 +966,7 @@ li.mega-menu__sub,
     &__live-btn {
         display: flex;
         color: $color-white !important;
-        background-color: $color-darkblue !important;
+        background-color: $color-orange !important;
         padding: 10px 20px;
         border-radius: 3px;
         margin-top: 10px;
@@ -1002,7 +1002,7 @@ li.mega-menu__sub,
         margin-right: auto;
         span {
             font-weight: 600;
-            color: $color-darkblue;
+            color: $color-orange;
         }
     }
     &__auto-result {
@@ -1244,7 +1244,7 @@ li.mega-menu__sub,
             color: $color-white;
             transform: translateY(-50%);
             content: "⇀";
-            background: $color-darkblue;
+            background: $color-orange;
             height: 30px;
             width: 30px;
             border-radius: 100%;
@@ -1252,7 +1252,7 @@ li.mega-menu__sub,
             transition: all 300ms ease;
         }
         &:hover {
-            color: $color-darkblue;
+            color: $color-orange;
             &::after {
                 opacity: 1;
                 right: 10px;
@@ -1264,7 +1264,7 @@ li.mega-menu__sub,
         padding: 0 !important;
         margin-top: 10px !important;
         font-size: 15px !important;
-        color: $color-darkblue !important;
+        color: $color-orange !important;
         font-weight: 600 !important;
         position: relative;
         border-bottom: none !important;
@@ -1324,7 +1324,7 @@ li.mega-menu__sub,
                 border-bottom: none !important;
             }
             &:hover {
-                color: $color-darkblue;
+                color: $color-orange;
                 font-weight: 600;
                 background: none !important;
                 color: #fff;
@@ -1617,8 +1617,6 @@ li.mega-menu__sub,
 // }
 
 /* CSS used here will be applied after bootstrap.css */
-
-
 
 .siderr {
     display: inline-block;
@@ -2096,8 +2094,6 @@ _:future,
 
 
 /*Start - gift certificate codes that can be used - Roi - 06/19/2020 9:22am*/
-
-
 
 .view_cart_link {
     font-size: 18px;

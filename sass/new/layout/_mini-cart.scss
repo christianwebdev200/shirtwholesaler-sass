@@ -6,12 +6,11 @@
     background: $color-white;
     width: 280px;
     border-radius: 5px;
-    border: 1px solid rgba($color-darkblue, 1);
+    border: 1px solid rgba($color-orange, 1);
     text-align: left;
     z-index: 50;
     box-shadow: 0 0 10px rgba($color-black, 0.05);
     // padding: 15px 25px;
-
     &::-webkit-scrollbar {
         display: none;
     }
@@ -32,11 +31,11 @@
     // @media screen and (max-width: 1500px) {
     // }
     &__header {
-        border-bottom: 1px solid rgba($color-darkblue, 1);
+        border-bottom: 1px solid rgba($color-orange, 1);
         padding: 12px 15px;
         h1 {
             font-size: 20px;
-            color: rgba($color-darkblue, 1);
+            color: rgba($color-orange, 1);
         }
     }
     &__list {
@@ -46,7 +45,7 @@
         max-height: 62vh;
         overflow-y: auto;
         overflow-x: hidden;
-        padding: 15px ;
+        padding: 15px;
         // &::-webkit-scrollbar {
         //     display: none;
         // }
@@ -102,7 +101,6 @@
         // padding: 15px 25px;
         padding: 15px;
         // padding: 10px;
-        // border-top: 1px solid rgba($color-darkblue, 1);
     }
     &__count {
         text-align: right;

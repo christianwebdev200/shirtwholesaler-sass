@@ -90,7 +90,7 @@
             display: block;
             height: 5px;
             width: 100%;
-            background: $color-darkblue;
+            background: $color-orange;
             &::after,
             &::before {
                 content: "";
@@ -378,7 +378,7 @@
         }
     }
     &__footer-item {
-        margin: 0 10px;
+        margin: 0 20px;
         [data-categoryid="318"] {
             .btn {
                 display: none;
@@ -718,7 +718,7 @@
 }
 
 .default {
-    background-color: $color-darkblue;
+    background-color: $color-orange;
 }
 
 .show-sub-list {
@@ -729,7 +729,7 @@
     }
     & .navbar__footer-header {
         @include respond(laptop-s) {
-            background-color: $color-darkblue;
+            background-color: $color-orange;
         }
     }
     & .navbar__footer-item-btn img {

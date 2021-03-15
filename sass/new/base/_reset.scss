@@ -58,9 +58,11 @@ img {
 
 .site-center {
     margin: auto;
-    max-width: 1200px;
-    width: 100%;
+    // max-width: 1200px;
+    // width: 100%;
     overflow: unset !important;
+    max-width: 95%;
+    width: 95%;
 }
 
 @media screen and (max-width: 1000px) {
