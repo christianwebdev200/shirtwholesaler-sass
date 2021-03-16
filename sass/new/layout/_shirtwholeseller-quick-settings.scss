@@ -1,2 +1,21 @@
+// apply on
+// footer.scss
+// header.scss
+// page-section.scss
+// edit-account.scss
+// legacy.core.scss
 // Change the value of content width
 $max-width-default: 95%;
+// ++++++++++++++++++++++++++
+// apply on
+// header.scss
+// floater control css
+@mixin login_floater_control {
+    border: 1px solid rgba($color-black, 0.1);
+    border-radius: 8px;
+    padding: 30px 50px 40px 50px !important;
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+    width: 400px !important;
+}
+
+$login_floater_control-text-size:14px !important;

@@ -1,7 +1,9 @@
 .site-center {
     margin: auto;
-    max-width: 1200px;
-    width: 100%;
+    // max-width: 1200px;
+    // width: 100%;
+    max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+    width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
 }
 
 .main-container {

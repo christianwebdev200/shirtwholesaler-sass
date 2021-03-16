@@ -490,8 +490,8 @@ img {
     margin: auto;
     // max-width: 1200px;
     // width: 100%;
-    max-width: 95%;
-    width: 95%;
+    max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+    width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
 }
 
 .logo-box {
@@ -767,7 +767,7 @@ img {
 //   }
 // }
 .sidenav {
-    border: 1px solid $color-lightgray;
+    // border: 1px solid $color-lightgray;
     margin-bottom: 15px;
     float: left;
     background: $color-white;
@@ -801,7 +801,7 @@ img {
     width: 100%;
     padding: 12px 6%;
     font-size: 18px;
-    color: #282829;
+    // color: #282829;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -825,15 +825,14 @@ img {
     margin-bottom: 0;
 }
 
-.sidenav ul ul li a {
-    font-size: 15px;
-    background-color: #f2f2f2 !important;
-    color: $color-dark !important;
-    padding: 8px 12px !important;
-    background-image: none !important;
-    border-bottom: 1px solid $color-lightgray;
-}
-
+// .sidenav ul ul li a {
+//     font-size: 15px;
+//     background-color: #f2f2f2 !important;
+//     color: $color-dark !important;
+//     padding: 8px 12px !important;
+//     background-image: none !important;
+//     border-bottom: 1px solid $color-lightgray;
+// }
 .down {
     // background-image: url("../images/submenu-indicator-1.png");
     background-image: url("../../images/submenu-indicator-1.png");

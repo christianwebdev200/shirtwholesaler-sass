@@ -93,7 +93,7 @@ $gray-new-border:#F2F2F2;
             // max-height: 50px !important;
         }
         &__available {
-            width: 32%;
+            width: auto;
             font-size: 12px;
             color: $color-gray2;
             @include respond(tab-port) {
@@ -102,7 +102,7 @@ $gray-new-border:#F2F2F2;
             b {
                 display: block;
                 color: $color-black;
-                font-size: 14px;
+                font-size: 16px;
             }
             br {
                 display: none;
@@ -110,6 +110,8 @@ $gray-new-border:#F2F2F2;
             strong {
                 display: block;
                 width: 100%;
+                color: $color-black;
+                font-size: 16px;
             }
         }
         &__price {

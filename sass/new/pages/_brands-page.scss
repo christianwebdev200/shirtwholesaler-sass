@@ -16,6 +16,9 @@
     .result-info {
         border: 0 !important;
         padding: 0;
+        @media only screen and (max-width: 1000px) {
+            padding: 0 10px;
+        }
     }
 }
 
@@ -27,6 +30,14 @@
     &__column {
         padding-left: 0;
         padding-right: 0;
-        padding: 10px;
+        padding: 3px;
+        @media only screen and (max-width: 1600px) {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+        @media only screen and (max-width:1500px) {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
     }
 }

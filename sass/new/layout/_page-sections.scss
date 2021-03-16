@@ -14,6 +14,16 @@
         @include respond(laptop-s) {
             padding-bottom: 20px;
         }
+        .main-content {
+            &__thumbnails {
+                &--item {
+                    @media only screen and (max-width: 1100px) {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
     }
     &--category {
         .breadcrum {
@@ -54,11 +64,16 @@
         min-height: 700px;
         max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
         width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        padding: 0;
         margin: auto;
     }
     &__sidebar {
-        flex: 0 0 20%;
-        max-width: 20%;
+        flex: 0 0 18%;
+        max-width: 18%;
+        @media only screen and (max-width: 1000px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
         .site-sidebar {
             width: 100%;
         }
@@ -67,14 +82,15 @@
         // }
     }
     &__right-content {
-        flex: 0 0 80%;
-        max-width: 80%;
+        flex: 0 0 82%;
+        max-width: 82%;
         @include respond(laptop-s) {
             padding: 0 18px !important;
         }
         @media only screen and (max-width:1000px) {
             flex: 0 0 100%;
             max-width: 100%;
+            padding: 0 !important;
         }
         @media only screen and (max-width:576px) {
             .row {
