@@ -246,6 +246,13 @@
     @include respond(tab-port) {
         display: none;
     }
+    &__preview {
+        display: flex;
+        align-items: center;
+    }
+    &__write-review {
+        display: none;
+    }
 }
 
 .product-feature {
@@ -268,7 +275,7 @@
 
 .product-title {
     padding-bottom: 10px;
-    border-bottom: 1px solid $color-lightgray;
+    // border-bottom: 1px solid $color-lightgray;
     margin-bottom: 20px;
     @include respond(tab-port) {
         order: 2;
@@ -320,8 +327,8 @@
             }
         }
         .filled-stars {
-            color: $color-gold;
-            border-color: $color-gold;
+            color: $color-yellow;
+            border-color: $color-yellow;
             -webkit-text-stroke: transparent;
             text-shadow: none;
         }
@@ -332,8 +339,8 @@
     }
     &__title {
         margin-bottom: 8px;
-        font-size: 22px;
-        font-weight: 400;
+        font-size: 32px;
+        font-weight: bold;
         @include respond(tab-port) {
             font-size: 30px;
             margin: 10px 0 20px 0;
@@ -375,7 +382,7 @@
         }
         h3 {
             display: inline;
-            color: #ff2c2c;
+            color: $color-orange;
         }
         span {
             font-size: 15px;
@@ -431,8 +438,12 @@
         align-items: center;
         border-radius: 3px;
         .select-color-box {
-            height: 30px;
-            width: 30px;
+            @media only screen and (min-width: 1000px) {
+                height: 40px;
+                width: 40px;
+            }
+            // height: 30px;
+            // width: 30px;
             border-radius: 5px;
             @include respond(mobile-ms) {
                 height: 25px;
@@ -488,6 +499,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    margin-bottom: 25px;
     &__header {
         display: flex;
         justify-content: flex-start;
@@ -508,8 +520,9 @@
 .size_chart {
     display: flex;
     align-items: center;
-    padding: 6px 10px;
+    padding: 0;
     border-radius: 3px;
+    font-weight: bold;
     @include transition;
     @include respond(tab-port) {
         margin-left: auto;
@@ -518,7 +531,7 @@
     .icon,
     .arrow {
         svg {
-            fill: $color-black;
+            fill: $color-orange;
         }
     }
     .icon {
@@ -530,7 +543,7 @@
     .title {
         margin: 0 8px;
         font-size: 14px;
-        color: $color-black;
+        color: $color-orange;
     }
     .arrow {}
     &:hover {
@@ -605,7 +618,7 @@ svg {
     float: left;
     width: 100%;
     background: #fff;
-    border: 1px solid #c9c9c9;
+    // border: 1px solid #c9c9c9;
     box-sizing: border-box;
     min-height: 800px;
     @include respond(mobile-lg) {
@@ -908,7 +921,7 @@ svg {
                 grid-template-columns: repeat(6, 38px);
             }
             .active {
-                border-color: #00234f !important;
+                border-color: $color-orange !important;
             }
             // grid-template-rows: repeat(5fr);
         }
@@ -1120,7 +1133,7 @@ body {
         }
         .heading {
             margin: 0 auto;
-            color: #00234f;
+            color: $color-orange;
             display: flex;
             align-items: center;
             margin-top: 15px;
@@ -1132,7 +1145,7 @@ body {
                 font-size: 20px;
             }
             svg {
-                fill: #00234f;
+                fill: $color-orange;
                 height: 42px;
                 width: 42px;
                 margin-right: 10px;
@@ -1427,7 +1440,7 @@ body {
 
 .btn {
     &--continue {
-        border: 1px solid #00234f;
+        border: 1px solid $color-orange;
     }
     &--continue,
     &--view-cart {
@@ -1442,7 +1455,7 @@ body {
         }
     }
     &--view-cart {
-        background-color: #00234f;
+        background-color: $color-orange;
         color: #fff;
     }
 }
@@ -1459,14 +1472,14 @@ body {
     float: left;
     width: 100%;
     position: relative;
-    border: 1px solid $color-gray;
-    padding: 7px 5px;
-    padding-left: 40px;
+    border: 1px solid $color-lightgray12;
+    padding: 15px 18px;
+    padding-left: 59px;
     font-size: 16px;
     box-sizing: border-box;
     @include respond(tab-port) {
         width: 100%;
-        border-color: #c9c9c9;
+        border-color: $color-lightgray12;
         max-width: 100%;
         position: static;
         padding-left: 20px;
@@ -1481,11 +1494,12 @@ body {
         overflow-y: scroll;
         width: 100%;
         display: none;
-        border: 1px solid $color-gray;
+        border: 1px solid $color-lightgray12;
         background: $color-white;
         position: absolute;
         left: 0px;
-        top: 33px;
+        // top: 33px;
+        top: 52px;
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
@@ -1647,7 +1661,6 @@ body {
 
 #btnGotoReview {
     color: #0a2972;
-
     &:hover {
         text-decoration: underline !important;
     }

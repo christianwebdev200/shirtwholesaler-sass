@@ -1577,16 +1577,15 @@ img {
     }
 }
 
-.product-detail-box {
-    float: left;
-    width: 100%;
-    background: $color-white;
-    border: 1px solid $color-lightgray;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
+// .product-detail-box {
+//     float: left;
+//     width: 100%;
+//     background: $color-white;
+//     // border: 1px solid $color-lightgray;
+//     box-sizing: border-box;
+//     // -moz-box-sizing: border-box;
+//     // -webkit-box-sizing: border-box;
+// }
 .pdetail {
     width: 100%;
     min-height: 752px;
@@ -1631,7 +1630,7 @@ img {
 }
 
 .product-color-box {
-    border-top: 1px solid $color-lightgray;
+    // border-top: 1px solid $color-lightgray;
     padding: 15px 0%;
 }
 
@@ -1730,30 +1729,29 @@ img {
                 position: relative;
                 height: 35px !important;
                 width: 35px !important;
-                border-radius: 0px !important;
-                border: none !important;
-                outline: 1px solid #000;
+                // border-radius: 4px !important;
+                // border: none !important;
+                // outline: 1px solid #000;
                 outline-offset: -1px;
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
+                // border: 1px solid $color-lightgray12;
+                // box-sizing: border-box;
                 &:hover {
                     span {
                         display: block;
                     }
                 }
-                span {
-                    position: absolute;
-                    display: none;
-                    top: -23px;
-                    eft: 0px;
-                    background: $color-white;
-                    font-size: 14px;
-                    color: #000;
-                    padding: 2px 5px;
-                    border: 1px solid $color-lightgray;
-                    border-radius: 2px;
-                }
+                // span {
+                //     position: absolute;
+                //     display: none;
+                //     top: -23px;
+                //     eft: 0px;
+                //     background: $color-white;
+                //     font-size: 14px;
+                //     color: #000;
+                //     padding: 2px 5px;
+                //     border: 1px solid $color-lightgray;
+                //     border-radius: 2px;
+                // }
             }
         }
     }
@@ -1781,21 +1779,20 @@ img {
     box-sizing: border-box;
 }
 
-.review-head-tip {
-    margin-bottom: 20px;
-    img {
-        float: left;
-    }
-    p {
-        a {
-            font-size: 14px;
-            font-weight: 400;
-            color: $color-lightblue;
-            margin: 0 5px;
-        }
-    }
-}
-
+// .review-head-tip {
+//     margin-bottom: 20px;
+//     img {
+//         float: left;
+//     }
+//     p {
+//         a {
+//             font-size: 14px;
+//             font-weight: 400;
+//             color: $color-lightblue;
+//             margin: 0 5px;
+//         }
+//     }
+// }
 .product-discription {
     h2 {
         margin-bottom: 8px;
@@ -2105,15 +2102,14 @@ img {
     margin-bottom: 30px;
 }
 
-.stock-info-box {
-    float: left;
-    width: 100%;
-    background: $color-gray;
-    padding-top: 13px;
-    padding-bottom: 0px;
-    border: 2px solid #44414f;
-}
-
+// .stock-info-box {
+//     float: left;
+//     width: 100%;
+//     // background: $color-gray;
+//     padding-top: 13px;
+//     padding-bottom: 0px;
+//     // border: 2px solid #44414f;
+// }
 .stock-control-left {
     float: left;
     width: 40%;
@@ -5871,14 +5867,13 @@ textArea:-webkit-autofill {
     }
 }
 
-.select-color-box {
-    position: absolute;
-    left: 10px;
-    height: 20px;
-    width: 20px;
-    top: 7px;
-}
-
+// .select-color-box {
+//     // position: absolute;
+//     // left: 10px;
+//     // height: 20px;
+//     // width: 20px;
+//     // top: 7px;
+// }
 .select-color-box-1 {
     position: absolute;
     left: 10px;
@@ -5893,7 +5888,7 @@ textArea:-webkit-autofill {
         overflow-y: scroll;
         width: 100%;
         display: none;
-        border: 1px solid $color-gray;
+        border: 1px solid $color-lightgray12;
         background: $color-white;
         position: absolute;
         left: 0px;

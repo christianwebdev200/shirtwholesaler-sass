@@ -187,11 +187,11 @@
     left: 0;
     top: 0;
     margin: auto;
-    color: $color-gray;
+    // color: $color-gray;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 1px $color-dark5;
-    text-shadow: 1px 1px $color-lightgray8;
+    // -webkit-text-stroke: 1px $color-dark5;
+    // text-shadow: 1px 1px $color-lightgray8;
 }
 
 .rating-rtl {
@@ -316,7 +316,7 @@
     width: 0px;
     height: 30px;
     border: 5px $color-white;
-    background-color: $color-darkred;
+    background-color: $color-orange;
     border-radius: 9px;
 }
 

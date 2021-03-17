@@ -89,7 +89,6 @@ $set-border-color:$color-gray-border !important;
 }
 
 .review-box,
-.product-detail-box,
 .product-row h2,
 .product-holder {
     border: 1px solid $set-border-color;
@@ -111,7 +110,7 @@ $set-border-color:$color-gray-border !important;
 }
 
 .product-title {
-    border-bottom: 1px solid $set-border-color;
+    // border-bottom: 1px solid $set-border-color;
     @media only screen and (max-width: 768px) {
         border-bottom: 0 !important;
     }
@@ -119,7 +118,6 @@ $set-border-color:$color-gray-border !important;
 
 .cost-row,
 .detail-thumb,
-.product-color-box,
 .customer-review {
     border-top: 1px solid $set-border-color;
 }

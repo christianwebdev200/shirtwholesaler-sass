@@ -1,4 +1,4 @@
-$sprite-all: url("../../images/new-allsprite-saler.png");
+$sprite-all: url("../../images/sprite-all.png");
 .sprite {
     background: $sprite-all;
     &--shipping {
@@ -171,7 +171,8 @@ button.secured__btn .fa.fa-lock {
     // width: 30px;
     background: $sprite-all;
     // background-position: -499px -81px !important;
-    background-position: -500px -82px !important;
+    // background-position: -500px -82px !important;
+    background-position: -744px -415px !important;
     // background-color: #f1f1f1 !important;
     right: 0 !important;
     position: absolute !important;

@@ -288,10 +288,11 @@
 .stock-info-box {
     float: left;
     width: 100%;
-    background: $color-gray;
+    background: $color-white-12;
     padding-top: 13px;
     padding-bottom: 0px;
-    border: 2px solid #44414f !important;
+    border: 0 !important;
+    // border: 2px solid #44414f !important;
 }
 
 .stock-control-left {
@@ -366,7 +367,7 @@
 .product-color-box {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid $color-lightgray;
+    // border-top: 1px solid $color-lightgray;
     padding-top: 15px;
     @media only screen and (max-width: 768px) {
         padding: 10px 0px;
@@ -383,9 +384,10 @@
                 display: block;
                 padding: 0px !important;
                 position: relative;
-                border-radius: 0px !important;
-                border: none !important;
-                outline: 1px solid #000;
+                border-radius: 4px !important;
+                // outline: 1px solid #000;
+                outline: none;
+                border: 1px solid $color-lightgray12;
                 outline-offset: -1px;
                 box-sizing: border-box;
                 height: 100%;
@@ -404,7 +406,7 @@
                     font-size: 14px;
                     color: #000;
                     padding: 2px 5px;
-                    border: 1px solid $color-lightgray;
+                    border: 1px solid $color-lightgray12;
                     border-radius: 2px;
                 }
             }
@@ -523,6 +525,7 @@
     @include respond(tab-port) {
         display: none;
     }
+    margin: 25px 0;
 }
 
 .site_chart {
@@ -583,6 +586,7 @@
         font-size: 18px;
         box-sizing: border-box;
         outline: none;
+        border-radius: 4px;
         &:focus {
             border: 1px solid $color-black;
         }
@@ -609,7 +613,7 @@
 
 .overall-rating {
     font-size: 14px;
-    margin-top: 7px;
+    // margin-top: 7px;
     color: #8e8d8d;
 }
 
@@ -715,7 +719,7 @@
 }
 
 .pop-up-close button {
-    background: #d83939;
+    background: $color-orange;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -745,6 +749,7 @@
 
 .toggleReviewPane {
     display: inline-block !important;
+    margin-left: 10px;
 }
 
 .reviewRedirect {
@@ -872,11 +877,11 @@
                 font-size: 17px;
                 font-weight: 700;
                 text-align: center;
-                color: $color-dark;
+                color: $color-orange;
                 span {
                     font-size: 15px;
                     font-weight: 400;
-                    color: #039806;
+                    color: #888888;
                     text-align: center;
                     clear: both;
                     display: block;
@@ -885,10 +890,10 @@
             th {
                 font-size: 17px;
                 font-weight: 700;
-                color: $color-white;
+                color: $color-black !important;
                 text-align: center;
                 line-height: 40px;
-                background: $color-gray;
+                background: $color-white-11;
             }
             td {
                 text-align: center;
@@ -1163,8 +1168,9 @@
 .select-color-box {
     position: absolute;
     left: 10px;
-    height: 20px;
-    width: 20px;
+    height: 38px;
+    width: 38px;
+    border-radius: 4px;
     top: 7px;
     border: 1px solid #ddd;
 }
@@ -1921,11 +1927,11 @@
     left: 0;
     top: 0;
     margin: auto;
-    color: $color-gray;
+    color: $color-yellow;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-text-stroke: 1px $color-dark5;
-    text-shadow: 1px 1px $color-lightgray8;
+    // -webkit-text-stroke: 1px $color-dark5;
+    // text-shadow: 1px 1px $color-lightgray8;
 }
 
 .rating-rtl {
@@ -2019,7 +2025,7 @@
     padding-left: 5px;
     padding-top: 5px;
 }
-
+ 
 .wrapper_books {
     width: 100px; // default value
     height: 20px;
@@ -2041,7 +2047,7 @@
     width: 0px;
     height: 30px;
     border: 5px $color-white;
-    background-color: $color-darkred;
+    background-color: $color-orange;
     border-radius: 9px;
 }
 
@@ -2518,7 +2524,7 @@ input.rating.hide {
         display: none !important;
     }
     .active {
-        outline: 2px solid $color-primary !important;
+        outline: 2px solid $color-orange !important;
     }
 }
 
@@ -2667,14 +2673,6 @@ input.rating.hide {
     margin-bottom: 10px;
     text-align: center;
     font-size: 18px;
-}
-
-.review-head-tip a {
-    color: #0a2972;
-}
-
-.review-head-tip a:hover {
-    text-decoration: underline !important;
 }
 
 .descrption ul li {
@@ -3404,3 +3402,47 @@ input.rating.hide {
         }
     }
 }
+
+.toggleReviewPane,
+#toggleReviewPane {
+    i {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-top: 6px solid $color-gray3 !important;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: relative;
+        top: 3px;
+    }
+    &:hover {
+        #reviewPane {
+            display: block !important;
+        }
+    }
+}
+
+.review-head-tip {
+    // margin-bottom: 20px;
+    img {
+        float: left;
+    }
+    p {
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-lightblue;
+            margin: 0 5px;
+        }
+    }
+    a {
+        color: $color-gray3;
+        font-size: 18px;
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+
+

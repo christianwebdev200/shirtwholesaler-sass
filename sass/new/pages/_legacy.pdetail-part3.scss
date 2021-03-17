@@ -1,10 +1,8 @@
-
-.overall-rating {
-    font-size: 14px;
-    margin-top: 7px;
-    color: #8e8d8d;
-}
-
+// .overall-rating {
+//     // font-size: 14px;
+//     // margin-top: 7px;
+//     // color: #8e8d8d;
+// }
 #background-fade {
     display: none;
     position: fixed;
@@ -65,7 +63,7 @@
 }
 
 .pop-up-close button {
-    background: #d83939;
+    background: $color-orange;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -80,13 +78,19 @@
     display: none;
 }
 
+
 /* Start - Tooltip for bulk pane - John - 06/10/2020 1:15 PM; */
+
 .orderallcolorssizes:hover>#bulkpane {
     display: block !important;
 }
 
+
 /* End - Tooltip for bulk pane - John - 06/10/2020 1:15 PM; */
+
+
 /* Start - Reviews popup responsive fix - John - 06/22/2020 - 11:00 AM */
+
 .toggleReviewPane {
     display: inline-block !important;
 }
@@ -99,15 +103,17 @@
     .toggleReviewPane {
         display: none !important;
     }
-
     .reviewRedirect {
         display: inline-block !important;
     }
 }
 
+
 /* End - Reviews popup responsive fix - John - 06/22/2020 - 11:00 AM */
 
+
 /*Start - bulk-order-display-image - Roi - 07/21/2020 7:29am*/
+
 .image-container-bulk div span {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -119,7 +125,6 @@
     .image-container-bulk div span {
         width: 185px;
     }
-
     #bulkAddtoCart .stock-info-box h3 {
         width: 30%;
     }
@@ -129,10 +134,10 @@
     .image-container-bulk div span {
         width: 105px;
     }
-
     #bulkAddtoCart .stock-info-box h3 {
         width: 25%;
     }
 }
+
 
 /*End - bulk-order-display-image - Roi - 07/21/2020 7:29am*/

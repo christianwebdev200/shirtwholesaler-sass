@@ -42,25 +42,6 @@ div#reviewPane {
     }
 }
 
-.toggleReviewPane,
-#toggleReviewPane {
-    i {
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        border-top: 6px solid #413a89;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        position: relative;
-        top: 3px;
-    }
-    &:hover {
-        #reviewPane {
-            display: block !important;
-        }
-    }
-}
-
 @media only screen and (min-width:1264px) {
     .pdetail .secured.old-secured {
         width: 250px !important;
@@ -370,27 +351,24 @@ ul.all-colors li a.col,
     }
 }
 
-
-
 // for slider fixes..
 #md-color-slider-ow {
     #md-color-slider {
-        > .tns-item {
+        >.tns-item {
             position: relative !important;
             &.col.out-of-stock {
                 border: 2px solid #f00 !important;
-                outline:none !important;
-            } 
+                outline: none !important;
+            }
         }
     }
-
 }
 
-
-#md-color-slider > .tns-item {
+#md-color-slider>.tns-item {
     position: relative;
 }
-#md-color-slider > .tns-item .out-of-stock {
+
+#md-color-slider>.tns-item .out-of-stock {
     outline: none !important;
     border: 2px solid #f00 !important;
-} 
+}
