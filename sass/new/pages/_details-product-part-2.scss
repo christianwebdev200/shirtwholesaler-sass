@@ -274,9 +274,9 @@
 }
 
 .product-title {
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
     // border-bottom: 1px solid $color-lightgray;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     @include respond(tab-port) {
         order: 2;
         border: none;
@@ -372,7 +372,7 @@
     &__price {
         display: block;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 300;
         margin-top: 10px;
         @include respond(tab-port) {
             margin-top: 0;
