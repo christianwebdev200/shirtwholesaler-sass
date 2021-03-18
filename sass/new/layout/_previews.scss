@@ -47,6 +47,10 @@
     @include respond(tab-port) {
         padding: 0 0 15px 0;
     }
+    
+    @include respond(mobile-lg) {
+        padding: 0 0 5px 0;
+    }
     h5 {
         min-height: 30px;
     }
@@ -213,5 +217,13 @@
     img {
         max-width: 100% !important;
         border-radius: 10px !important;
+        width: 100%;
     }
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 100%;
 }

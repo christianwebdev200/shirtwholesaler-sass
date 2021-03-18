@@ -253,7 +253,81 @@ $gray-new-border:#F2F2F2;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
+        height: 100%;
+
+        @include respond(tab-port) {
+            padding: 10px 30px;
+        }
+        @include respond(mobile-ms) {
+            padding: 10px 20px;
+        }
+        @include respond(mobile-m) {
+            padding: 8px 13px;
+        }
+
+        &--image {
+            flex: 0 0 75px !important;
+            
+            @include respond(tab-port) {
+                flex: 0 0 60px !important;
+            }
+            @include respond(mobile-lg) {
+                flex: 0 0 40px !important;
+            }
+            @include respond(mobile-m) {
+                flex: 0 0 30px !important;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--text {
+            flex: 0 0 80%;
+            max-width: 80%;
+            margin-left: 15px;
+
+            @include respond(mobile-lg) {
+                margin-left: 10px;
+            }
+
+            h5 {
+                font-size: 22px;
+                line-height: 25px;
+                
+                @include respond(tab-port) {
+                    font-size: 20px;
+                    line-height: 22px;
+                    margin-bottom: 5px;
+                }
+
+                @include respond(mobile-lg) {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+                @include respond(mobile-ms) {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                @include respond(mobile-m) {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            p {
+                font-size: 15px;
+
+                @include respond(mobile-ms) {
+                    font-size: 14px;
+                }
+                @include respond(mobile-m) {
+                    font-size: 11px;
+                }
+            }
+        }
+
         &--red {
             background: $red;
             h5 {
@@ -290,25 +364,6 @@ $gray-new-border:#F2F2F2;
                 color: $yellow_subtext;
             }
         }
-        &--image {
-            flex: 0 0 75px !important;
-            max-width: 75px !important;
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-        &--text {
-            flex: 0 0 80%;
-            max-width: 80%;
-            margin-left: 15px;
-            h5 {
-                font-size: 22px;
-                line-height: 25px;
-            }
-            p {
-                font-size: 15px;
-            }
-        }
+        
     }
 }
