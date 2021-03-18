@@ -3650,6 +3650,30 @@ $right-details-width--mobile: 100% !important;
                 &--active {
                     display: block;
                 }
+                #bulkAddtoCart {
+                    width: 100%;
+                    .stock-info-box {
+                        &__div {
+                            &:first-child {
+                                display: none;
+                            }
+                            flex-direction: row-reverse;
+                            .stock-control-right {
+                                display: flex;
+                                justify-content: flex-end;
+                                .stock-in {
+                                    width: auto;
+                                    background: $color-white;
+                                    border: 0;
+                                    p {
+                                        font-weight: bold;
+                                        color: $color-green2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
