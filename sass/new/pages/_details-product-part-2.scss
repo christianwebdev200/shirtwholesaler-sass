@@ -701,8 +701,8 @@ svg {
     overflow: hidden;
     flex: 100%;
     width: 100%;
-    min-width: 480px;
-    max-width: 480px;
+    // min-width: 480px;
+    // max-width: 480px;
     max-height: 600px;
     img {
         width: 100%;
@@ -1010,34 +1010,6 @@ svg {
     p {
         padding: 5px !important;
     }
-}
-
-.readmore {
-    display: none;
-    align-items: flex-end;
-    position: absolute;
-    color: $color-primary;
-    font-size: 18px;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    font-weight: 700;
-    cursor: pointer;
-    padding: 10px 0;
-    background: linear-gradient( 354.99deg, #ffffff 4.74%, rgba(255, 255, 255, 0.747396) 59.34%, rgba(255, 255, 255, 0.24) 96.7%);
-    @include respond(tab-port) {
-        display: flex;
-    }
-    @include respond(mobile-ms) {
-        font-size: 16px;
-    }
-}
-
-.see-more .readmore {
-    position: relative !important;
-    background: none !important;
-    padding: 0 !important;
 }
 
 #addtoSCartbtn {

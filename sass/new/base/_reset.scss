@@ -61,15 +61,15 @@ img {
     // max-width: 1200px;
     // width: 100%;
     overflow: unset !important;
-    max-width: 95%;
-    width: 95%;
+    // max-width: 95%;
+    // width: 95%;
 }
 
 @media screen and (max-width: 1000px) {
     .site-center {
         max-width: 100% !important;
         width: 100%;
-        padding: 0 2%;
+        // padding: 0 2%;
         box-sizing: border-box;
     }
 }
@@ -78,7 +78,7 @@ img {
     .site-center {
         max-width: 100% !important;
         width: 100%;
-        padding: 0 2%;
+        // padding: 0 2%;
         box-sizing: border-box;
     }
 }
