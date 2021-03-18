@@ -7,6 +7,7 @@
 
 .product-preview {
     &__header {
+        display: flex;
         padding: 8px 0;
         h3,
         h2 {
@@ -14,10 +15,19 @@
             text-transform: uppercase;
             font-weight: 600;
             padding-top: 6px;
+            user-select: none;
             // color: rgba($color-gray, 1);
             color: $color-orange;
+
+            @include respond(tab-port) {
+                font-size: 20px;
+            }
+
             @include respond(mobile-m) {
-                font-size: 14px;
+                font-size: 16px;
+            }
+            @include respond(mobile-lg) {
+                width: 80%;
             }
         }
     }

@@ -70,6 +70,12 @@ mobile-s : 0 - 320px (iphone 5/se or Galaxy fold)
         }
     }
     // 1000px to 1264px
+    @if $screen-size==laptop-m {
+        @media (max-width: 1100px) {
+            @content;
+        }
+    }
+    // 1000px to 1264px
     @if $screen-size==laptop {
         @media (max-width: 1264px) {
             @content;
