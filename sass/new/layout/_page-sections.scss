@@ -65,13 +65,11 @@
                 clear: both;
             }
         }
-    }
-    .container {
-        // min-height: 700px;
-        // max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
-        // width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
-        // padding: 0;
-        // margin: auto;
+        .container {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 15px;
+        }
     }
     &__sidebar {
         flex: 0 0 18%;
@@ -115,6 +113,18 @@
                 padding-left: 10px;
                 padding-right: 10px;
             }
+        }
+    }
+    .container-fluid,
+    .container {
+        // min-height: 700px;
+        // max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        // width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
+        // padding: 0;
+        // margin: auto;
+        .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
     }
 }

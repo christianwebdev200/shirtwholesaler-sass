@@ -81,13 +81,12 @@
 
 // the color borders
 $set-border-color:$color-gray-border !important;
-.pdetail {
-    border-left: 1px solid $set-border-color;
-    @media only screen and (max-width: 768px) {
-        border-left: 0 !important;
-    }
-}
-
+// .pdetail {
+//     // border-left: 1px solid $set-border-color;
+//     @media only screen and (max-width: 768px) {
+//         border-left: 0 !important;
+//     }
+// }
 .review-box,
 .product-row h2,
 .product-holder {
@@ -116,12 +115,11 @@ $set-border-color:$color-gray-border !important;
     }
 }
 
-.cost-row,
-.detail-thumb,
-.customer-review {
-    border-top: 1px solid $set-border-color;
-}
-
+// .cost-row,
+// .detail-thumb,
+// .customer-review {
+//     border-top: 1px solid $set-border-color;
+// }
 .cost-row {
     border-top: 0 !important;
 }
