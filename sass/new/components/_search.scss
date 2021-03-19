@@ -14,26 +14,22 @@
     @media (max-width: 79em) {
         right: -100%;
     }
-    @include respond(laptop-s) {
+    @include respond(laptop-m) {
         position: absolute;
-        width: 95%;
-        right: 10px;
-        top: 130px;
+        width: 100%;
+        right: auto;
+        left: 0;
+        top: 50px;
     }
-    @include respond(tab-land) {
-        width: 270px;
-        top: 45px;
-    }
+   
     @include respond(mobile-lg) {
         border-radius: 1px;
     }
-    @include respond(mobile-m) {
-        width: 210px;
-    }
+   
     &__live {
         width: 72%;
         padding: 20px 20px 30px 20px;
-        @include respond(tab-land) {
+        @include respond(laptop-m) {
             display: none;
         }
     }
@@ -64,7 +60,7 @@
         box-shadow: 0 0 10px rgba($color-black, 0.1);
         border-radius: 3px;
         z-index: 1000;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             width: 220px;
             top: 125px;
             right: 15px;
@@ -87,7 +83,7 @@
             display: block;
             color: $color-gray3;
             padding: 5px 5px;
-            @include respond(laptop-s) {
+            @include respond(laptop-m) {
                 padding: 8px 5px;
             }
             @include respond(mobile-lg) {
@@ -159,10 +155,7 @@
         padding: 10px;
         background-color: $color-white3;
         min-height: 320px;
-        @include respond(laptop-s) {
-            width: 35%;
-        }
-        @include respond(tab-land) {
+        @include respond(laptop-m) {
             width: 100%;
         }
         @include respond(tab-port) {
@@ -212,12 +205,10 @@
             font-weight: 500;
             font-size: 18px;
             text-align: left !important;
-            @include respond(mobile-m) {
+            @include respond(laptop-m) {
                 font-size: 16px;
             }
-            @include respond(mobile-m) {
-                font-size: 15px;
-            }
+           
             span {
                 display: inline-block;
                 margin-left: auto;

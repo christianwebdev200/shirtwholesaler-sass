@@ -182,9 +182,12 @@
             width: 220px;
         }
 
+        @include respond(mobile-ms) {
+            width: 200px;
+        }
 
         @include respond(mobile-m) {
-            width: 200px;
+            width: 190px;
         }
     }
     &__ads {
@@ -220,8 +223,6 @@
         align-items: center;
         margin-left: auto;
 
-        
-
         @media only screen and (min-width: 1000px) {
             position: absolute;
             right: 0;
@@ -230,7 +231,10 @@
         &>*:not(:last-child) {
             margin-right: 15px;
             @include respond(mobile-lg) {
-                margin-right: 5px;
+                margin-right: 10px;
+            }
+            @include respond(mobile-m) {
+                margin-right: 6px;
             }
         }
         @media only screen and (max-width: 370px) {
@@ -543,6 +547,7 @@
         display: flex;
         align-items: center;
         width: 100%;
+        height: 100%;
         cursor: pointer;
         color: $color-white;
         user-select: none;
@@ -832,6 +837,6 @@
     position: fixed;
     z-index: 1000;
     height: 100vh;
-    width: 100vh;
+    width: 100%;
     background: rgba($color-black, 0.25);
 }

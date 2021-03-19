@@ -20,28 +20,28 @@
 
 .flex-pc-only {
     display: flex !important;
-    @include respond(laptop-s) {
+    @include respond(laptop-m) {
         display: none !important;
     }
 }
 
 .flex-mob-only {
     display: none !important;
-    @include respond(laptop-s) {
+    @include respond(laptop-m) {
         display: flex !important;
     }
 }
 
 .n-mobile-only {
     display: none !important;
-    @include respond(laptop-s) {
+    @include respond(laptop-m) {
         display: unset !important;
     }
 }
 
 .n-desktop-only {
     display: flow-root !important;
-    @include respond(laptop-s) {
+    @include respond(laptop-m) {
         display: none !important;
     }
 }
