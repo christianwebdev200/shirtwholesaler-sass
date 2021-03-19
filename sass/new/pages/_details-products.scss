@@ -378,8 +378,8 @@
     ul {
         li {
             display: block;
-            margin-right: 6px;
-            margin-bottom: 6px;
+            margin-right: 5px;
+            margin-bottom: 5px;
             background-image: none !important;
             // width: 35px;
             width: 50px;
@@ -3746,5 +3746,23 @@ $right-details-width--mobile: 100% !important;
             color: $color-orange;
             background: transparent !important;
         }
+    }
+    &__item {
+        &--left {
+            padding-left: 0;
+        }
+        &--right {
+            padding-right: 0;
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.swiper-settings {
+    &__column {
+        margin-right: 10px;
     }
 }
