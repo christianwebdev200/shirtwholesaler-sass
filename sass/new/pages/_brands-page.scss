@@ -3,6 +3,11 @@
         margin-bottom: 10px;
         margin-top: 10px;
         border: 1px solid $color-gray-border !important;
+
+        @include respond(mobile-lg) {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     }
     .col-lg-3.col-md-4.col-sm-6 {
         margin-bottom: 15px;
@@ -16,14 +21,19 @@
     .result-info {
         border: 0 !important;
         padding: 0;
-        @media only screen and (max-width: 1000px) {
-            padding: 0 10px;
-        }
     }
 }
 
 .brands-products-display {
     margin: 0;
+    &__result {
+        .result-info {
+
+        }
+        .result-info-left, .result-info-right {
+            font-size: 14px !important;
+        }
+    }
     &__result {
         padding: 0;
     }
@@ -43,5 +53,33 @@
             flex: 0 0 33.33%;
             max-width: 33.33%;
         }
+        @include respond(mobile-lg) {
+            padding: 5px;
+        }
     }
+}
+
+.pagination {
+    display: flex;
+
+    li {
+        @include respond(mobile-lg) {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        @include respond(mobile-ms) {
+            padding: 8px 12px;
+            font-size: 14px;
+            margin-right: 3px;
+        }
+        @include respond(mobile-s) {
+                padding: 6px 10px;
+                font-size: 13px;
+        }
+    }
+}
+
+.pagnos {
+  margin: 0 !important;
+  padding: 0 !important;   
 }

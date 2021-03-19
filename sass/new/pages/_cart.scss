@@ -306,10 +306,6 @@ button:active {
     height: auto;
 }
 
-.mr-auto {
-    margin-left: auto;
-}
-
 @include respond(tab-port) {
     .cart-sidebar {
         width: 100% !important;
@@ -319,8 +315,6 @@ button:active {
         width: 100% !important;
     }
 }
-
-
 /*End - New right side checkout experience - Roi - 09/18/2020*/
 
 // This section of css was came from the cart.php

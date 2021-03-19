@@ -4,7 +4,6 @@
 
 .main-content {
     min-height: 500px;
-    padding-bottom: 25px;
     &--index {
         .brand-box {
             @media only screen and (max-width: 600px) {
@@ -134,12 +133,6 @@
         // padding: 0;
         // margin: auto;
         .row {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            @include respond(mobile-lg) {
-                margin-left: -15px !important;
-                margin-right: -15px !important;
-            }
             &>* {
                 @include respond(mobile-lg) {
                     padding-left: 5px !important;

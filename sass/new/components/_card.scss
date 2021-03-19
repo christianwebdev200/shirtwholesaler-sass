@@ -11,7 +11,13 @@ $gray-new-border:#F2F2F2;
         padding: 0 !important;
         justify-content: space-between;
         border-radius: 10px;
-        padding-bottom: 10px !important;
+        // padding-bottom: 10px !important;
+
+
+        @include respond(mobile-lg) {
+            border: none;
+        }
+
         @include respond(mobile-lg) {
             padding: 0;
         }
@@ -53,11 +59,13 @@ $gray-new-border:#F2F2F2;
             padding: 5px;
             justify-content: flex-start;
             margin-bottom: auto;
-            @include respond(mobile-lg) {
-                padding-bottom: 0;
-            }
+
             @media only screen and (max-width:767px) {
                 height: auto;
+            }
+            @include respond(mobile-lg) {
+                padding: 5px 3px;
+              
             }
         }
         &__footer {
@@ -68,18 +76,18 @@ $gray-new-border:#F2F2F2;
                 border-top: none;
                 padding: 10px 8px 10px 8px;
             }
-            @media only screen and (max-width:480px) {
-                padding-top: 1px !important;
-                padding-bottom: 2px !important;
+            @include respond(mobile-lg){
+                padding: 2px;
             }
         }
         &__brand {
             height: 25px;
             margin-right: 6px;
+            margin-left: auto;
             // img {
             //     height: 100%;
             // }
-            @include respond(tab-port) {
+            @include respond(mobile-m) {
                 display: none;
             }
         }
@@ -92,6 +100,12 @@ $gray-new-border:#F2F2F2;
             overflow: hidden;
             line-height: 1.2;
             // max-height: 50px !important;
+
+            @include respond(mobile-lg) {
+                font-weight: 700;
+                font-size: 12px;
+            }
+
         }
         &__available {
             width: auto;
@@ -110,10 +124,10 @@ $gray-new-border:#F2F2F2;
                 width: 100%;
                 color: $color-black;
                 font-size: 16px;
+                margin-left: 3px;
             }
             @media only screen and (max-width:1000px) {
-                display: flex;
-                align-items: flex-start;
+                display: inline-flex;
                 font-size: 12px;
                 color: $color-gray2;
                 white-space: nowrap;
@@ -124,8 +138,12 @@ $gray-new-border:#F2F2F2;
                 strong {
                     font-size: inherit;
                     color: $color-gray2;
-                    margin-left: 2px;
+                    // margin-left: 2px;
                 }
+            }
+
+            @include respond(mobile-s) {
+                display: none;
             }
         }
         &__price {
@@ -156,7 +174,10 @@ $gray-new-border:#F2F2F2;
                     font-size: 18px;
                 }
                 @include respond(mobile-lg) {
-                    font-size: 1.1em;
+                    font-size: 16px;
+                }
+                @include respond(mobile-m) {
+                    font-size: 15px;
                 }
             }
         }

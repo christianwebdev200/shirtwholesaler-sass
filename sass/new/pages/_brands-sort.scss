@@ -45,14 +45,19 @@
             top: inherit;
             right: inherit;
             margin-top: 5px;
-            padding: 0 10px;
+            padding: 0;
         }
         select {
             border-radius: 5px;
             line-height: 25px;
             color: $color-gray3;
             height: 40px !important;
+            @include respond(mobile-lg) {
+                font-size: 16px;
+                height: auto !important;
+            }
         }
+
     }
     @media only screen and (min-width: 1001px) {
         &__select-option {

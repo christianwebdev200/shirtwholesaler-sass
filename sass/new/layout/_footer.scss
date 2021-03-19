@@ -8,7 +8,7 @@
     min-height: 700px;
     border-top: 1px solid $color-lightgray11;
     @include respond(tab-port) {
-        padding: 20px 10px;
+        padding: 20px 0;
     }
     &__logo,
     .box-1-inner a:first-child {
@@ -18,7 +18,7 @@
         @include respond(laptop) {
             height: 60px;
         }
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             text-align: center;
         }
         @include respond(tab-port) {
@@ -34,18 +34,16 @@
     &__banner {
         white-space: pre-line;
         text-align: center;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             text-align: center;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             margin-bottom: 20px;
         }
         @include respond(tab-port) {
             font-size: 15px;
         }
-        @include respond(mobile-lg) {
-            width: 90%;
-        }
+      
         .box-1-inner {
             img {
                 // height: 70px !important;
@@ -158,6 +156,12 @@
         width: 100%;
         // margin-top: 30px;
         color: $color-lightgray8;
+
+        @include respond(laptop-m) {
+            text-align: left;
+            margin-top: 20px;
+        }
+
         @include respond(mobile-lg) {
             font-size: 15px;
         }
@@ -178,7 +182,8 @@
         }
     }
     &--style2 {
-        @media only screen and (max-width: 480px) {
+        @include respond(tab-port) {
+
             .footer__left-content {
                 margin-bottom: 0 !important;
             }
@@ -187,7 +192,6 @@
                 flex: 0 0 50%;
                 max-width: 50%;
                 margin-bottom: 20px !important;
-                padding-left: 25px;
             }
             .footer__list-link:before {
                 display: none;
