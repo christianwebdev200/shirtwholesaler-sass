@@ -97,9 +97,6 @@ $gray-new-border:#F2F2F2;
             width: auto;
             font-size: 12px;
             color: $color-gray2;
-            @include respond(tab-port) {
-                display: none;
-            }
             b {
                 display: block;
                 color: $color-black;
@@ -114,6 +111,22 @@ $gray-new-border:#F2F2F2;
                 color: $color-black;
                 font-size: 16px;
             }
+            @media only screen and (max-width:1000px) {
+                display: flex;
+                align-items: flex-start;
+                font-size: 12px;
+                color: $color-gray2;
+                white-space: nowrap;
+                br {
+                    display: none;
+                }
+                b,
+                strong {
+                    font-size: inherit;
+                    color: $color-gray2;
+                    margin-left: 2px;
+                }
+            }
         }
         &__price {
             align-items: center;
@@ -121,6 +134,11 @@ $gray-new-border:#F2F2F2;
             display: block;
             span {
                 display: block;
+                @media only screen and (max-width: 1000px) {
+                    &.starting_at {
+                        display: none !important;
+                    }
+                }
             }
             .start-at {
                 font-size: 13px;
@@ -131,8 +149,11 @@ $gray-new-border:#F2F2F2;
                 font-size: 24px;
                 font-weight: 700;
                 color: $color-orange;
-                @include respond(tab-land) {
-                    font-size: 22px;
+                // @include respond(tab-land) {
+                //     font-size: 22px;
+                // }
+                @media only screen and (max-width: 1000px) {
+                    font-size: 18px;
                 }
                 @include respond(mobile-lg) {
                     font-size: 1.1em;
