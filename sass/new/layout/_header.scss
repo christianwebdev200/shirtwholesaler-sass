@@ -12,9 +12,6 @@
         max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
         width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
         margin: auto;
-        @include respond(laptop) {
-            padding: 0 20px;
-        }
         @include respond(tab-port) {
             height: auto;
         }
@@ -35,7 +32,7 @@
         color: #fff;
         margin: 10px 0 10px 10px;
         background: none;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             display: flex;
         }
         @include respond(mobile-lg) {
@@ -89,8 +86,10 @@
             position: relative;
             display: block;
             height: 5px;
-            width: 100%;
+            width: 90%;
             background: $color-orange;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
             &::after,
             &::before {
                 content: "";
@@ -98,14 +97,17 @@
                 position: absolute;
                 left: 0;
                 height: 100%;
-                width: 100%;
                 background: inherit;
                 @include transition;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
             }
             &::after {
                 top: 13px;
+                width: 110%;
             }
             &::before {
+                width: 120%;
                 top: -13px;
             }
             @include respond(tab-port) {
@@ -128,16 +130,16 @@
             }
         }
         &--clicked {
-            span {
-                &::after {
-                    top: 0;
-                    transform: rotate(45deg);
-                }
-                &::before {
-                    transform: rotate(-45deg);
-                    top: 0;
-                }
-            }
+            // span {
+            //     &::after {
+            //         top: 0;
+            //         transform: rotate(45deg);
+            //     }
+            //     &::before {
+            //         transform: rotate(-45deg);
+            //         top: 0;
+            //     }
+            // }
         }
     }
     &__main {
@@ -146,7 +148,7 @@
         z-index: 150;
         height: auto;
         padding: 15px 0;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             height: 100px;
         }
         @include respond(tab-port) {
@@ -157,9 +159,9 @@
             height: auto;
             padding: 14px 0;
         }
-        .container {
-            justify-content: space-between;
-        }
+        // .container {
+        //     justify-content: space-between;
+        // }
     }
     &__right-holder {
         display: flex;
@@ -184,7 +186,7 @@
         // @include respond(laptop) {
         //     height: 65px;
         // }
-        // @include respond(laptop-s) {
+        // @include respond(laptop-m) {
         //     height: 45px;
         // }
         // @include respond(tab-land) {
@@ -224,6 +226,11 @@
         margin: 0 auto;
         position: relative;
         margin-right: 15px;
+
+        form {
+            width: 100%;
+        }
+
         @include respond(laptop) {
             width: 300px;
         }
@@ -233,10 +240,15 @@
             }
         }
     }
+
+
     &__action {
         display: flex;
         align-items: center;
         margin-left: auto;
+
+        
+
         @media only screen and (min-width: 1000px) {
             position: absolute;
             right: 0;
@@ -255,31 +267,91 @@
             position: relative;
         }
     }
+
+    &__search-btn {
+        display: none;
+
+        @include respond(laptop-m) {
+            display: block;
+        }
+    }
+
+
     &__footer {
         background-color: $color-white;
         display: block;
         display: block;
         border-top: 1px solid $color-lightgray11;
         border-bottom: 1px solid $color-lightgray11;
-        @include respond(laptop-s) {
+
+        &-brand {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+
+            @include respond(laptop-m) {
+                display: flex;
+            }
+            
+            .navbar__search {
+                margin: 10px 0;
+                width: 100%;
+
+                input {
+                    height: auto;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        &-logo {
+           display: flex;
+
+           .navbar__logo {
+               width: 65%;
+               img {
+                   margin-bottom: 0 !important;
+               }
+           }
+        }
+        
+        &-exit {
+            height: 28px;
+            width: 28px;
+            margin-right: 8px;
+        
+            svg {
+                fill: $color-orange;
+            }
+            
+           
+        }
+
+        @include respond(laptop-m) {
             display: none;
         }
         & .container {
+            display: flex;
             height: auto !important;
+
+            @include respond(laptop-m) {
+                flex-direction: column;
+            }
+
             @include respond(laptop) {
                 padding: 0;
             }
         }
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             position: fixed;
             top: 0;
-            padding-top: 100px;
             left: 0;
             height: 100vh;
-            width: 85%;
+            width: 300px;
+            padding-top: 50px;
             box-shadow: 10px 10px 10px rgba($color-black, 0.3);
-            z-index: 100;
-            background: $color-gray;
+            z-index: 1100;
+            background: $color-white;
             overflow: auto;
         }
         @include respond(tab-port) {
@@ -300,7 +372,7 @@
         box-shadow: 0 0 14px rgba($color-black, 0.1);
         // left: 0;
         left: auto;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             min-width: 100%;
         }
     }
@@ -314,7 +386,7 @@
         min-width: 220px;
         box-shadow: 0 0 14px rgba($color-black, 0.1);
         padding: 15px 0;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             width: 100%;
             min-width: 100%;
         }
@@ -372,7 +444,7 @@
         // justify-content: space-between;
         justify-content: center;
         list-style: none;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             flex-direction: column;
         }
         li {
@@ -397,24 +469,24 @@
     }
     &__footer-item:hover .mega-menu {
         display: flex;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             display: none;
         }
     }
     &__footer-item:hover &__footer-more {
         display: block;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             display: none;
         }
     }
     &__footer-item:hover &__footer-brands {
         display: block;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             display: none;
         }
     }
     .mega-menu {
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             top: 0;
         }
     }
@@ -443,6 +515,10 @@
             margin-left: 10px;
             position: relative;
             // top: -3px;
+
+            @include respond(laptop-m) {
+                display: none;
+            }
         }
         &:hover {
             // color: $color-white !important;
@@ -464,9 +540,8 @@
             font-size: 16px;
             padding: 10px 8px !important;
         }
-        @media only screen and (max-width:1202px) {
-            font-size: 15px;
-            padding: 10px 5px !important;
+        @include respond(laptop-m) {
+            padding: 5px !important;
         }
         // @include respond(mobile-lg) {
         //     font-size: 15px;
@@ -481,7 +556,7 @@
     &__footer-item:hover &__footer-header {
         background-color: $color-white;
         color: $color-gray;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             background-color: unset;
             color: $color-white;
         }
@@ -496,7 +571,7 @@
     }
     &__footer-item-btn {
         display: none;
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             display: block;
             margin-left: auto;
             padding: 10px;
@@ -536,7 +611,7 @@
         @include respond(laptop) {
             font-size: 15px;
         }
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             font-size: 14px;
         }
         @include respond(mobile-lg) {
@@ -748,12 +823,12 @@
 
 .show-sub-list {
     .mega-menu {
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             display: flex !important;
         }
     }
     & .navbar__footer-header {
-        @include respond(laptop-s) {
+        @include respond(laptop-m) {
             background-color: $color-orange;
         }
     }
@@ -780,4 +855,12 @@
 
 .navitem-relative {
     position: relative;
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 1099;
+    height: 100vh;
+    width: 100vh;
+    background: rgba($color-black, 0.25);
 }
