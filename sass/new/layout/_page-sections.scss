@@ -5,9 +5,6 @@
 .main-content {
     min-height: 500px;
     padding-bottom: 25px;
-
-   
-
     &--index {
         .brand-box {
             @media only screen and (max-width: 600px) {
@@ -122,6 +119,8 @@
     }
     .container-fluid,
     .container {
+        padding-left: 15px;
+        padding-right: 15px;
         // min-height: 700px;
         // max-width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
         // width: $max-width-default; // quick settings /new/layout/shirtwholeseller-quick-settings
@@ -130,14 +129,11 @@
         .row {
             margin-left: 0 !important;
             margin-right: 0 !important;
-            
             @include respond(laptop-m) {
                 margin-left: -15px !important;
                 margin-right: -15px !important;
             }
-
-
-            & > * {
+            &>* {
                 @include respond(mobile-lg) {
                     padding-left: 5px !important;
                     padding-right: 5px !important;
@@ -146,3 +142,19 @@
         }
     }
 }
+
+// .main-content {
+//     .container,
+//     .container-fluid {
+//         // padding-left: 15px;
+//         // padding-right: 15px;
+//         padding-left: 30px;
+//         padding-right: 30px;
+//         width: 100%;
+//         max-width: 100%;
+//         @media only screen and (max-width: 800px) {
+//             padding-left: 5px;
+//             padding-right: 5px;
+//         }
+//     }
+// }

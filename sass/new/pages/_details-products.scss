@@ -3613,7 +3613,7 @@ $right-details-width--mobile: 100% !important;
         padding: 0 20px !important;
     }
     @media only screen and (max-width: 800px) {
-        padding: 0 10px !important;
+        padding: 0 5px !important;
     }
     .site-center {
         max-width: 100% !important;
@@ -3751,9 +3751,9 @@ $right-details-width--mobile: 100% !important;
         &--left {
             padding-left: 0;
         }
-        &--right {
-            padding-right: 0;
-        }
+    }
+    &__container {
+        padding: 0;
     }
     &__row {
         display: flex;
