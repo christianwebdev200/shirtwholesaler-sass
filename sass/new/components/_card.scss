@@ -25,14 +25,15 @@ $gray-new-border:#F2F2F2;
             user-select: none;
             // border-bottom: 1px solid $color-gray-border;
             height: auto;
-            -webkit-border-radius: 0 0 10px 10px;
             border-radius: 0 0 10px 10px;
-            border-bottom: 1px solid $gray-new-border;
+            // border-bottom: 1px solid $gray-new-border;
             img {
                 width: 100%;
                 width: 100% !important;
                 height: 100% !important;
                 object-fit: cover;
+                border-radius: 0 0 10px 10px;
+                border-bottom: 1px solid $gray-new-border;
             }
             @include respond(laptop) {
                 height: auto;
@@ -255,7 +256,6 @@ $gray-new-border:#F2F2F2;
         border-radius: 10px;
         // margin-bottom: 15px;
         height: 100%;
-
         @include respond(tab-port) {
             padding: 10px 30px;
         }
@@ -265,10 +265,8 @@ $gray-new-border:#F2F2F2;
         @include respond(mobile-m) {
             padding: 8px 13px;
         }
-
         &--image {
             flex: 0 0 75px !important;
-            
             @include respond(tab-port) {
                 flex: 0 0 60px !important;
             }
@@ -278,7 +276,6 @@ $gray-new-border:#F2F2F2;
             @include respond(mobile-m) {
                 flex: 0 0 30px !important;
             }
-
             img {
                 width: 100%;
                 height: auto;
@@ -288,21 +285,17 @@ $gray-new-border:#F2F2F2;
             flex: 0 0 80%;
             max-width: 80%;
             margin-left: 15px;
-
             @include respond(mobile-lg) {
                 margin-left: 10px;
             }
-
             h5 {
                 font-size: 22px;
                 line-height: 25px;
-                
                 @include respond(tab-port) {
                     font-size: 20px;
                     line-height: 22px;
                     margin-bottom: 5px;
                 }
-
                 @include respond(mobile-lg) {
                     font-size: 18px;
                     line-height: 20px;
@@ -318,7 +311,6 @@ $gray-new-border:#F2F2F2;
             }
             p {
                 font-size: 15px;
-
                 @include respond(mobile-ms) {
                     font-size: 14px;
                 }
@@ -327,7 +319,6 @@ $gray-new-border:#F2F2F2;
                 }
             }
         }
-
         &--red {
             background: $red;
             h5 {
@@ -364,6 +355,5 @@ $gray-new-border:#F2F2F2;
                 color: $yellow_subtext;
             }
         }
-        
     }
 }
