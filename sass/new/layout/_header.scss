@@ -15,12 +15,6 @@
         @include respond(tab-port) {
             height: auto;
         }
-        @include respond(mobile-lg) {
-            padding: 0 10px;
-        }
-        @include respond(mobile-s) {
-            padding: 0 9px;
-        }
     }
     &__filter {
         display: none;
@@ -157,7 +151,7 @@
         }
         @include respond(mobile-lg) {
             height: auto;
-            padding: 14px 0;
+            padding: 8px 0;
         }
         // .container {
         //     justify-content: space-between;
@@ -183,36 +177,15 @@
             // height: 100%;
             margin-bottom: -15px;
         }
-        // @include respond(laptop) {
-        //     height: 65px;
-        // }
-        // @include respond(laptop-m) {
-        //     height: 45px;
-        // }
-        // @include respond(tab-land) {
-        //     // height: 45px;
-        //     top: 4px;
-        // }
-        // @include respond(mobile-lg) {
-        //     height: 38px;
-        //     top: 4px;
-        // }
-        // @include respond(mobile-s) {
-        //     height: 33px;
-        //     top: 4px;
-        // }
-        // @include respond(mobile-lg) {
-        //   height: 34px;
-        // }
-        // @include respond(mobile-m) {
-        //   height: 30px;
-        // }
-        // @include respond(mobile-m) {
-        //   height: 28px;
-        // }
-        // @include respond(mobile-s) {
-        //   height: 25px;
-        // }
+        
+        @include respond(mobile-lg) {
+            width: 220px;
+        }
+
+
+        @include respond(mobile-m) {
+            width: 200px;
+        }
     }
     &__ads {
         margin-left: 60px;
@@ -257,10 +230,7 @@
         &>*:not(:last-child) {
             margin-right: 15px;
             @include respond(mobile-lg) {
-                margin-right: 10px;
-            }
-            @include respond(mobile-s) {
-                margin-right: 6px;
+                margin-right: 5px;
             }
         }
         @media only screen and (max-width: 370px) {
@@ -283,6 +253,20 @@
         display: block;
         border-top: 1px solid $color-lightgray11;
         border-bottom: 1px solid $color-lightgray11;
+
+        @include respond(laptop-m) {
+            .mega-menu {
+                box-shadow: none !important;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .mega-menu__sub {
+                border-bottom: none !important;
+            }
+
+
+        }
 
         &-brand {
             display: none;
@@ -355,14 +339,9 @@
             overflow: auto;
         }
         @include respond(tab-port) {
-            padding-top: 89px;
+            padding-top: 40px;
         }
-        @include respond(mobile-lg) {
-            padding-top: 73px;
-        }
-        @include respond(mobile-m) {
-            padding-top: 68px;
-        }
+       
     }
     &__footer-more {
         display: none;
@@ -549,7 +528,6 @@
         // }
         @include respond(mobile-m) {
             // font-size: 16px;
-            font-size: 20px;
             padding: 8px 10px;
         }
     }
@@ -590,11 +568,6 @@
         display: flex;
         &:hover .cart-preview {
             display: unset;
-        }
-        @include respond(mobile-lg) {
-            svg {
-                height: 28px !important;
-            }
         }
     }
     &__cart-price {
@@ -828,9 +801,6 @@
         }
     }
     & .navbar__footer-header {
-        @include respond(laptop-m) {
-            background-color: $color-orange;
-        }
     }
     & .navbar__footer-item-btn img {
         transform: rotate(90deg);
@@ -858,8 +828,9 @@
 }
 
 .navbar-overlay {
+    display: none;
     position: fixed;
-    z-index: 1099;
+    z-index: 1000;
     height: 100vh;
     width: 100vh;
     background: rgba($color-black, 0.25);

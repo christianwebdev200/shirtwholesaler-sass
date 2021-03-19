@@ -293,6 +293,10 @@
         &__label {
             font-size: 12px;
             color: $color-icon;
+
+            @include respond(mobile-m) {
+                font-size: 10px;
+            }
         }
         svg {
             height: 35px;
@@ -320,7 +324,7 @@
         }
         @include respond(mobile-m) {
             svg {
-                height: 30px;
+                height: 26px;
             }
             &__count {
                 font-size: 10px;
