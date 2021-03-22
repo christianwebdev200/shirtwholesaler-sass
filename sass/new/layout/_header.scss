@@ -177,20 +177,16 @@
         svg {
             // height: 100%;
             margin-bottom: -15px;
-
             @include respond(mobile-lg) {
                 margin-bottom: -10px;
             }
         }
-        
         @include respond(mobile-lg) {
             width: 210px;
         }
-
         @include respond(mobile-ms) {
             width: 190px;
         }
-
         @include respond(mobile-m) {
             width: 170px;
         }
@@ -207,11 +203,9 @@
         margin: 0 auto;
         position: relative;
         margin-right: 15px;
-
         form {
             width: 100%;
         }
-
         @include respond(laptop) {
             width: 300px;
         }
@@ -221,13 +215,10 @@
             }
         }
     }
-
-
     &__action {
         display: flex;
         align-items: center;
         margin-left: auto;
-
         @media only screen and (min-width: 1000px) {
             position: absolute;
             right: 0;
@@ -235,7 +226,6 @@
         }
         &>*:not(:last-child) {
             margin-right: 15px;
-
             @include respond(mobile-lg) {
                 margin-right: 12px;
             }
@@ -244,91 +234,72 @@
             position: relative;
         }
     }
-
     &__search-btn {
         display: none;
-
         @include respond(laptop-m) {
             display: block;
         }
     }
-
-
     &__footer {
         background-color: $color-white;
         display: block;
         display: block;
         border-top: 1px solid $color-lightgray11;
         border-bottom: 1px solid $color-lightgray11;
-
+        @include transition();
         @include respond(laptop-m) {
             .mega-menu {
                 box-shadow: none !important;
                 border-radius: 5px;
                 overflow: hidden;
             }
-
             .mega-menu__sub {
                 border-bottom: none !important;
             }
-
-
         }
-
         &-brand {
             display: none;
             flex-direction: column;
             width: 100%;
-
             @include respond(laptop-m) {
                 display: flex;
             }
-            
             .navbar__search {
                 margin: 10px 0;
                 width: 100%;
-
                 input {
                     height: auto;
                     border-radius: 0;
                 }
             }
         }
-
         &-logo {
-           display: flex;
-
-           .navbar__logo {
-               width: 65%;
-               img {
-                   margin-bottom: 0 !important;
-               }
-           }
+            display: flex;
+            .navbar__logo {
+                width: 65%;
+                img {
+                    margin-bottom: 0 !important;
+                }
+            }
         }
-        
         &-exit {
             height: 28px;
             width: 28px;
             margin-right: 8px;
-        
             svg {
                 fill: $color-orange;
             }
-            
-           
         }
-
         @include respond(laptop-m) {
-            display: none;
+            // display: none;
+            transform: translate(-140%, 0);
         }
         & .container {
             display: flex;
             height: auto !important;
-
             @include respond(laptop-m) {
                 flex-direction: column;
             }
-
             @include respond(laptop) {
                 padding: 0;
             }
@@ -348,7 +319,6 @@
         @include respond(tab-port) {
             padding-top: 40px;
         }
-       
     }
     &__footer-more {
         display: none;
@@ -501,7 +471,6 @@
             margin-left: 10px;
             position: relative;
             // top: -3px;
-
             @include respond(laptop-m) {
                 display: none;
             }
@@ -808,8 +777,7 @@
             display: flex !important;
         }
     }
-    & .navbar__footer-header {
-    }
+    & .navbar__footer-header {}
     & .navbar__footer-item-btn img {
         transform: rotate(90deg);
     }
@@ -822,7 +790,8 @@
 }
 
 .show-sidebar {
-    display: block !important;
+    // display: block !important;
+    transform: translate(0, 0);
 }
 
 #ajax_response {
