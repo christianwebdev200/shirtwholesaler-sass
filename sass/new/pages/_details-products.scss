@@ -370,7 +370,8 @@
 
 .product-color-box {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    flex-direction: column-reverse;
     // border-top: 1px solid $color-lightgray;
     // padding-top: 15px;
     @media only screen and (max-width: 768px) {
@@ -445,6 +446,11 @@
             li {
                 width: 100% !important;
             }
+        }
+    }
+    &__logo {
+        @media only screen and (min-width: 1320px) {
+            min-width: 200px;
         }
     }
 }
@@ -1054,13 +1060,18 @@
 
 #addtoSCartbtn {
     background-color: $color-orange !important;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: 23px;
     text-transform: uppercase;
-    padding: 15px 40px !important;
+    // padding: 15px 40px !important;
+    padding: 13px 0 !important;
     box-sizing: border-box;
     color: $color-white;
     border-radius: 3px;
     font-weight: bold;
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: 0;
 }
 
 #addtoSCartbtn {
@@ -2554,7 +2565,7 @@ input.rating.hide {
 }
 
 .cl-all-colors {
-    display: block;
+    // display: block;
     margin-top: 15px;
     // @media (max-width: 48em) {
     //     display: none !important;
@@ -3536,7 +3547,8 @@ $right-details-width--mobile: 100% !important;
         input {
             width: 100% !important;
             border-radius: 5px !important;
-            border: 1px solid $color-lightgray11 !important;
+            // border: 1px solid $color-lightgray11 !important;
+            border: 1px solid #b1b0b0 !important;
         }
         .prid {
             color: $color-orange;
@@ -3706,6 +3718,7 @@ $right-details-width--mobile: 100% !important;
 
 .page-detail-display {
     padding: 0 50px;
+    overflow: hidden;
     @media only screen and (max-width: 1400px) {
         padding: 0 20px !important;
     }
@@ -3786,6 +3799,7 @@ $right-details-width--mobile: 100% !important;
             &__header {
                 h2 {
                     margin: 0px 15px;
+                    width: 100% !important;
                 }
             }
         }
@@ -3881,6 +3895,21 @@ $right-details-width--mobile: 100% !important;
         align-items: center;
     }
     &__buttons {
+        &--two {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            // min-width: 220px;
+            max-width: 50%;
+            flex: 0 0 50%;
+            a {
+                padding: 0;
+                font-size: 12px;
+                text-align: center !important;
+                border: 0 !important;
+                font-weight: 500;
+            }
+        }
         @media only screen and (max-width: 480px) {
             display: flex;
             flex-direction: row;
@@ -4069,5 +4098,70 @@ $right-details-width--mobile: 100% !important;
 header {
     .navbar.mb-3 {
         margin-bottom: 15px !important;
+    }
+}
+
+.product-title-box-section {
+    flex-wrap: wrap;
+    &__left {
+        flex: 0 0 10%;
+        max-width: 10%;
+        @media only screen and (max-width: 768px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &__middle {
+        flex: 0 0 60%;
+        max-width: 60%;
+        .product-colors__bottom {
+            .color-select {
+                width: 95%;
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            .product-colors__bottom .color-select {
+                min-width: 100% !important;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            flex: 0 0 80%;
+            max-width: 80%;
+            padding-right: 15px;
+            .product-colors__bottom {
+                max-width: 100%;
+                width: 100% !important;
+            }
+        }
+    }
+    &__right {
+        flex: 0 0 30%;
+        max-width: 30%;
+        .product-logo-box {
+            margin: 0 !important;
+            @media only screen and (min-width: 768px) {
+                height: 85px;
+            }
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                    @media only screen and (max-width: 1560px) {
+                        object-fit: contain;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width:768px) {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
     }
 }
