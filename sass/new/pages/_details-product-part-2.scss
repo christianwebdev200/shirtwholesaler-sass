@@ -604,13 +604,13 @@ svg {
 }
 
 .heading--pdetails {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 10px;
     @include respond(mobile-ms) {
         font-size: 20px;
     }
     @include respond(mobile-ms) {
-        font-size: 18px;
+        font-size: 13px;
     }
 }
 

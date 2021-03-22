@@ -3743,6 +3743,11 @@ $right-details-width--mobile: 100% !important;
             display: block;
             content: '';
         }
+        @media only screen and (max-width:480px) {
+            .product-batch-box {
+                margin-top: 0 !important;
+            }
+        }
     }
     &__top-section {}
     &__bottom-section {
@@ -3800,6 +3805,10 @@ $right-details-width--mobile: 100% !important;
                 h2 {
                     margin: 0px 15px;
                     width: 100% !important;
+                }
+                @media only screen and (max-width:480px) {
+                    margin-top: 0 !important;
+                    padding-top: 0 !important;
                 }
             }
         }
@@ -3870,16 +3879,26 @@ $right-details-width--mobile: 100% !important;
     &__item {
         &--left {
             padding-left: 0;
-            flex: 0 0 80%;
-            max-width: 80%;
+            flex: 0 0 70%;
+            max-width: 70%;
         }
         &--right {
             padding: 0;
-            flex: 0 0 20%;
-            max-width: 20%;
+            flex: 0 0 30%;
+            max-width: 30%;
             .product-logo-box {
+                @media only screen and (min-width: 1300px) {
+                    height: 74px;
+                }
                 a {
                     display: block;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 margin: 0;
                 width: 100%;
@@ -3904,7 +3923,7 @@ $right-details-width--mobile: 100% !important;
             flex: 0 0 50%;
             a {
                 padding: 0;
-                font-size: 12px;
+                font-size: 18px;
                 text-align: center !important;
                 border: 0 !important;
                 font-weight: 500;
@@ -3961,6 +3980,9 @@ $right-details-width--mobile: 100% !important;
 
 .product-main-info-mobile {
     padding-top: 10px;
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 0;
+    }
     * {
         padding: 0;
         margin: 0;
@@ -4089,6 +4111,25 @@ $right-details-width--mobile: 100% !important;
     }
 }
 
+@media only screen and (max-width:480px) {
+    .product-feature__product-colors.product-colors div#allColorDiv {
+        margin: 0;
+        padding: 0;
+    }
+    .product-discription__product-feature {
+        margin-bottom: 0 !important;
+    }
+    .page-detail-display__bottom-section .product-batch-box h2 {
+        padding: 0;
+    }
+    .page-detail-display__bottom-section .product-batch-box {
+        margin-top: 0 !important;
+    }
+    .product-quantity .product-quantity__header .heading--pdetails {
+        margin-bottom: 0 !important;
+    }
+}
+
 @media only screen and (max-width:600px) {
     #feedback-load-here {
         display: none !important;
@@ -4104,19 +4145,21 @@ header {
 .product-title-box-section {
     flex-wrap: wrap;
     &__left {
-        flex: 0 0 10%;
-        max-width: 10%;
-        @media only screen and (max-width: 768px) {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
+        // flex: 0 0 10%;
+        // max-width: 10%;
+        // @media only screen and (max-width: 768px) {
+        //     flex: 0 0 100%;
+        //     max-width: 100%;
+        // }
+        flex: 0 0 20%;
+        max-width: 20%;
     }
     &__middle {
         flex: 0 0 60%;
         max-width: 60%;
         .product-colors__bottom {
             .color-select {
-                width: 95%;
+                width: 100%;
             }
         }
         @media only screen and (max-width: 800px) {
@@ -4127,7 +4170,7 @@ header {
         @media only screen and (max-width: 768px) {
             flex: 0 0 80%;
             max-width: 80%;
-            padding-right: 15px;
+            // padding-right: 15px;
             .product-colors__bottom {
                 max-width: 100%;
                 width: 100% !important;
