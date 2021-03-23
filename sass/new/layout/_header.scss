@@ -69,8 +69,10 @@
             min-width: 45px;
         }
         @include respond(mobile-lg) {
-            width: 35px;
-            min-width: 35px;
+            // width: 35px;
+            // min-width: 35px;
+            width: 45px;
+            min-width: 45px;
             margin-right: 10px;
         }
         @include respond(mobile-m) {
@@ -184,11 +186,21 @@
         @include respond(mobile-lg) {
             width: 210px;
         }
-        @include respond(mobile-ms) {
+        // @include respond(mobile-ms) {
+        //     // width: 190px;
+        //     width: 180px;
+        // }
+        // @include respond(mobile-m) {
+        //     width: 160px;
+        // }
+        @media only screen and (max-width:414px) {
             width: 190px;
         }
-        @include respond(mobile-m) {
-            width: 170px;
+        @media only screen and (max-width:375px) {
+            width: 165px;
+        }
+        @media only screen and (max-width:320px) {
+            width: 145px;
         }
     }
     &__ads {
@@ -227,7 +239,9 @@
         &>*:not(:last-child) {
             margin-right: 15px;
             @include respond(mobile-lg) {
-                // margin-right: 12px;
+                margin-right: 15px;
+            }
+            @media only screen and (max-width:320px) {
                 margin-right: 5px;
             }
         }

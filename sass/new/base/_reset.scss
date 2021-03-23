@@ -192,4 +192,10 @@ img {
     .swiper-button-next {
         display: none !important;
     }
+    .featured-container {
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: block !important;
+        }
+    }
 }

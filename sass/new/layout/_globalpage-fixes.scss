@@ -32,3 +32,47 @@
         max-width: 100% !important;
     }
 }
+
+.login-half {
+    .log-sub-left {
+        input[type="submit"] {
+            background: $color-orange;
+        }
+    }
+    >div {
+        border: 1px solid #ff5b00;
+        background-color: #ffdfcc;
+    }
+    .log-input-box input[type="email"],
+    .log-input-box input[type="password"] {
+        border: 1px solid #ff5c02;
+    }
+    @media only screen and (max-width:414px) {
+        .log-head-row {
+            display: flex;
+            align-items: center;
+            div {
+                width: auto;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.login-half.psw-full {
+    @media only screen and (max-width: 414px) {
+        #frmForgotpwd {
+            .log-head-row {
+                display: flex;
+                align-items: center;
+                >div {
+                    width: auto;
+                    margin-right: 10px;
+                }
+            }
+            .log-head {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -43,13 +43,14 @@
         @include respond(tab-port) {
             font-size: 15px;
         }
-      
         .box-1-inner {
             img {
                 // height: 70px !important;
                 // width: 289px;
-                width: 327px;
-                height: 79px !important;
+                // width: 327px;
+                // height: 79px !important;
+                width: 100%;
+                height: auto;
             }
             @media only screen and (max-width: 414px) {
                 img {
@@ -156,12 +157,10 @@
         width: 100%;
         // margin-top: 30px;
         color: $color-lightgray8;
-
         @include respond(laptop-m) {
             text-align: left;
             margin-top: 20px;
         }
-
         @include respond(mobile-lg) {
             font-size: 15px;
         }
@@ -183,7 +182,6 @@
     }
     &--style2 {
         @include respond(tab-port) {
-
             .footer__left-content {
                 margin-bottom: 0 !important;
             }
