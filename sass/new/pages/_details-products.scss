@@ -3533,6 +3533,18 @@ $right-details-width--mobile: 100% !important;
                 }
             }
         }
+        #product-feature-main {
+            display: none !important;
+            @media only screen and (max-width: 1000px) {
+                display: flex !important;
+            }
+        }
+        #product-feature-mobile {
+            display: block !important;
+            @media only screen and (max-width: 1000px) {
+                display: none !important;
+            }
+        }
     }
 }
 
@@ -3840,7 +3852,7 @@ $right-details-width--mobile: 100% !important;
     font-weight: 700;
     cursor: pointer;
     padding: 10px 0;
-    // background: linear-gradient( 354.99deg, #ffffff 4.74%, rgba(255, 255, 255, 0.747396) 59.34%, rgba(255, 255, 255, 0.24) 96.7%);
+    background: linear-gradient( 354.99deg, #ffffff 4.74%, rgba(255, 255, 255, 0.747396) 59.34%, rgba(255, 255, 255, 0.24) 96.7%);
     @include respond(tab-port) {
         display: flex;
     }
@@ -3875,7 +3887,7 @@ $right-details-width--mobile: 100% !important;
             padding: 0;
             font-size: 15px;
             color: $color-orange;
-            background: transparent !important;
+            // background: transparent !important;
         }
         @media only screen and (max-width:480px) {
             order: 5;
@@ -3926,6 +3938,10 @@ $right-details-width--mobile: 100% !important;
             // min-width: 220px;
             max-width: 50%;
             flex: 0 0 50%;
+            @media only screen and (max-width: 480px) {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
             a {
                 padding: 0;
                 font-size: 18px;
@@ -4032,6 +4048,7 @@ $right-details-width--mobile: 100% !important;
     &__title {
         .product-title__title {
             font-size: 18px;
+            margin-bottom: 0;
         }
     }
     &__star {
@@ -4143,6 +4160,11 @@ $right-details-width--mobile: 100% !important;
     .product-quantity .product-quantity__header .heading--pdetails {
         margin-bottom: 0 !important;
     }
+    .product-main-info.product-main-info-mobile {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        padding-top: 0;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -4154,6 +4176,9 @@ $right-details-width--mobile: 100% !important;
 header {
     .navbar.mb-3 {
         margin-bottom: 15px !important;
+        @media only screen and (max-width: 414px) {
+            margin-bottom: 0 !important;
+        }
     }
 }
 
@@ -4270,20 +4295,34 @@ header {
 
 .product-chart__header,
 .product-quantity__header {
-    .size_chart__two {
-        display: none !important;
-    }
     a.size_chart.size_chart__two {
         display: none !important;
     }
-    .size_chart {
-        &__size-chart-selector {
-            .size_chart__one {
-                display: none !important;
-            }
-            .size_chart__two {
-                display: flex !important;
-            }
+    &.active {
+        a.size_chart.size_chart__one {
+            display: none !important;
+        }
+        a.size_chart.size_chart__two {
+            display: flex !important;
+        }
+    }
+}
+
+.stars-rating {
+    .row {
+        display: flex !important;
+        align-items: center;
+        flex-wrap: inherit;
+    }
+    .product-main-info-mobile__starting {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media only screen and (max-width: 340px) {
+            flex-wrap: wrap;
+        }
+        h3 {
+            margin-left: 4px;
         }
     }
 }

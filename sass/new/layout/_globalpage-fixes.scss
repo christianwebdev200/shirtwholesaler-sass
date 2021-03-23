@@ -76,3 +76,8 @@
         }
     }
 }
+
+.ck-save input[type="submit"],
+.checkout-submit-button input[type="submit"] {
+    background: $color-orange;
+}

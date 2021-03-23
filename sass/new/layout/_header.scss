@@ -3,6 +3,11 @@
     @include respond(tab-port) {
         margin-bottom: 0px !important;
     }
+    &.mb-3 {
+        @media only screen and (max-width: 414px) {
+            margin-bottom: 0 !important;
+        }
+    }
     .container {
         display: flex;
         align-items: center;
@@ -138,6 +143,30 @@
             //     }
             // }
         }
+        margin-right: 20px !important;
+        position: relative;
+        .magni {
+            width: 30px;
+            display: flex;
+            @media only screen and (max-width: 480px) {
+                width: 25px;
+            }
+            span {
+                @media only screen and (min-width: 769px) {
+                    width: 21px;
+                    right: -13px;
+                    top: 12px;
+                }
+                @media only screen and (min-width:768px) {
+                    top: 7px;
+                }
+                background: transparent !important;
+                position: absolute;
+                width: 20px;
+                right: -9px;
+                top: 8px;
+            }
+        }
     }
     &__main {
         position: relative;
@@ -194,10 +223,16 @@
         //     width: 160px;
         // }
         @media only screen and (max-width:414px) {
-            width: 190px;
+            // width: 190px;
+            width: 220px;
         }
         @media only screen and (max-width:375px) {
-            width: 165px;
+            // width: 195px;
+            width: 195px;
+        }
+        @media only screen and (max-width:355px) {
+            // width: 195px;
+            width: 185px;
         }
         @media only screen and (max-width:320px) {
             width: 145px;
