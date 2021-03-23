@@ -22,6 +22,7 @@
             text-align: center;
         }
         @include respond(tab-port) {
+            margin-bottom: 0;
             height: 60px;
         }
         @include respond(mobile-s) {
@@ -29,6 +30,18 @@
         }
         img {
             height: 100%;
+            @include respond(desktop-wide) {
+                height: auto;
+                width: 100%;
+            }
+            @include respond(laptop-s) {
+                width:auto ;
+                height: 100%;
+            }
+            @include respond(mobile-lg) {
+                width: 248px;
+                height: auto;
+            }
         }
     }
     &__banner {
@@ -49,15 +62,14 @@
                 // width: 289px;
                 // width: 327px;
                 // height: 79px !important;
-                width: 100%;
                 height: auto;
             }
-            @media only screen and (max-width: 414px) {
-                img {
-                    height: 60px !important;
-                    width: 248px;
-                }
-            }
+            // @media only screen and (max-width: 414px) {
+            //     img {
+            //         height: auto !important;
+            //         width: 248px;
+            //     }
+            // }
         }
     }
     &__list {}

@@ -294,8 +294,14 @@ $gray-new-border:#F2F2F2;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        user-select: none;
+        cursor: pointer;
         // margin-bottom: 15px;
         height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+
         @include respond(tab-port) {
             padding: 10px 30px;
         }
@@ -325,6 +331,7 @@ $gray-new-border:#F2F2F2;
             flex: 0 0 80%;
             max-width: 80%;
             margin-left: 15px;
+
             @include respond(mobile-lg) {
                 margin-left: 10px;
             }
