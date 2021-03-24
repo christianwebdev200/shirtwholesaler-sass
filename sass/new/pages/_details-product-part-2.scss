@@ -1127,9 +1127,7 @@ body {
       }
       .product-row > *:last-child {
         display: none;
-        }
-    
-      
+      }
     }
 
     .heading {
@@ -1678,4 +1676,10 @@ body {
   color: #545454;
   font-weight: 600;
   justify-content: center;
+}
+
+.loadmore-button-holder {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
