@@ -3904,9 +3904,9 @@ $right-details-width--mobile: 100% !important;
             flex: 0 0 30%;
             max-width: 30%;
             .product-logo-box {
-                @media only screen and (min-width: 1300px) {
-                    height: 74px;
-                }
+                // @media only screen and (min-width: 1300px) {
+                //     height: 74px;
+                // }
                 a {
                     display: block;
                     width: 100%;
