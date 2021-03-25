@@ -145,9 +145,9 @@ img {
 .swiper-button-next {
     top: -2% !important;
     display: none !important;
-    @include respond(laptop-m) {
-        display: flex !important;
-    }
+    // @include respond(laptop-m) {
+    //     display: flex !important;
+    // }
     @include respond(mobile-lg) {
         top: -8% !important;
     }
