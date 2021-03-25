@@ -3949,6 +3949,15 @@ $right-details-width--mobile: 100% !important;
                 border: 0 !important;
                 font-weight: 500;
             }
+            #btnShowSentStockEmail {
+                font-size: 11px;
+                color: $color-orange;
+                font-weight: bold;
+            }
+        }
+        @media only screen and (max-width: 1244px) and (min-width:479px) {
+            display: flex !important;
+            flex-direction: row;
         }
         @media only screen and (max-width: 480px) {
             // display: flex;
