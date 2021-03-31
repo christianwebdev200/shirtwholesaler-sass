@@ -147,7 +147,7 @@
     // height: 100%;
     // width: 100%;
     .active {
-      border-color: $color-primary !important;
+      border-color: $color-orange !important;
     }
     a {
       border: 2px solid rgba($color-black, 0.3);
@@ -1046,9 +1046,9 @@ body {
   scroll-behavior: smooth;
 }
 
-.color-select .active {
-  background-color: rgba($color-gray, 0.08) !important;
-}
+// .color-select .active {
+//   background-color: rgba($color-gray, 0.08) !important;
+// }
 
 .alert-message {
   display: none;

@@ -487,14 +487,21 @@ input.rating.hide {
 }
 
 #frmCheckoutS {
-    .checkout-row-full input {
+    .checkout-row-full {
+        label {
+            @include respond(tab-port) {
+                text-align: left;
+            }
+        }
+        
+        input {
         @include respond(laptop-s){
             width: 60%;
         }
         @include respond(tab-port) {
             width: 100%;
         }
-    }
+    }}
 .checkout-row-half {
     @include respond(laptop-s) {
         width: 100%;

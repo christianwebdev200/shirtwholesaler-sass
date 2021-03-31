@@ -3481,15 +3481,16 @@ img {
 
 .mail-left {
     float: left;
-    width: 40%;
+    width: 100%;
 }
 
 .mail-right {
     float: right;
-    width: 55%;
+    width: 100%;
     border: 1px solid $color-darkred;
     border-radius: 5px;
     padding: 2%;
+    margin-top: 10px;
 }
 
 .contact-left-box {
@@ -3515,6 +3516,11 @@ img {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+.mail-address {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-right-box {

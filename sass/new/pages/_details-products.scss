@@ -1202,6 +1202,11 @@
                     float: left;
                     font-size: 20px;
                     margin-top: 7px;
+
+                    @include respond(tab-port) {
+                        margin-top: 0;
+                    }
+
                 }
             }
         }
@@ -2571,9 +2576,20 @@ input.rating.hide {
     //     display: none !important;
     // }
     .active {
-        outline: 2px solid $color-orange !important;
+        border: 4px solid $color-orange !important;
+        @include respond(tab-port) {
+            border: none !important;
+            background: $color-orange !important;
+            color: $color-white !important;
+        }
     }
 }
+
+#target-col .active {
+    background: $color-orange !important;
+    color: #fff !important;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .review-box .rw-top-box .rw-two table tr {
