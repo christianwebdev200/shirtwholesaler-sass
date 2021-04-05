@@ -53,3 +53,27 @@
 .logo1 {
     text-align: center;
 }
+
+.small {
+    &--image {
+        margin-top: 15px;
+        a {
+            display: block;
+            height: 70px;
+
+            @include respond(mobile-lg) {
+                height: 60px;
+            }
+
+            @include respond(mobile-ms) {
+                height: 50px;
+            }
+            @include respond(mobile-m) {
+                height: 40px;
+            }
+        }
+        img {
+            height: 100%;
+        }
+    }
+}

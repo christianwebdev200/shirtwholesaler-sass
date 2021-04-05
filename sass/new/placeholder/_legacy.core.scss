@@ -2442,6 +2442,10 @@ img {
                 }
                 &.cart-price {
                     font-size: 18px;
+
+                    @include respond(mobile-m) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -2500,6 +2504,24 @@ img {
                         padding: 8px 5px;
                         max-width: 90px;
                         outline: none !important;
+                        @include respond(mobile-m) {
+                            font-size: 16px;
+                            max-width: 70px;
+                        }
+                    }
+                    input[type="number"] {
+                        font-size: 18px;
+                        border: 1px solid $color-lightgray;
+                        background: $color-white-8;
+                        text-align: center;
+                        padding: 8px 5px;
+                        max-width: 90px;
+                        outline: none !important;
+                        
+                        @include respond(mobile-m) {
+                            font-size: 16px;
+                            max-width: 70px;
+                        }
                     }
                     input[type="text"]:-webkit-autofill {
                         -webkit-box-shadow: 0 0 0 30px $color-dark6 inset;
@@ -2507,6 +2529,9 @@ img {
                 }
                 &.cart-total {
                     font-size: 18px;
+                    @include respond(mobile-m) {
+                        font-size: 16px;
+                    }
                 }
             }
         }

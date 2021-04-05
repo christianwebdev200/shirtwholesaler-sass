@@ -773,7 +773,7 @@ _:future,
         padding-right: 50px;
         box-sizing: border-box;
     }
-    .cart-summary-tab table tr td:first-child {
+     tr td:first-child {
         padding-right: 0px !important;
     }
     .cart-img {
@@ -2492,7 +2492,6 @@ _:future,
         top: auto;
     }
 }
-
 @media screen and (max-width: 450px) {
     .ck-log-left {
         display: block;
@@ -2533,6 +2532,11 @@ _:future,
     }
     .confirm-tb table tr td ul li:nth-child(4) img {
         width: 25px !important;
+    }
+}
+@media screen and (max-width: 340px) {
+     .cart-summary-tab table tr td {
+        padding-right: 25px;
     }
 }
 

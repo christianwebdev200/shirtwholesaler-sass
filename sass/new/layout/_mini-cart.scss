@@ -1,9 +1,9 @@
 .cart-preview {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 76%;
     // left: -176px;
-    left: -245px;
+    left: -225px;
     background: $color-white;
     width: 280px;
     border-radius: 5px;
@@ -15,15 +15,12 @@
     &::-webkit-scrollbar {
         display: none;
     }
-    @media screen and (max-width: 1500px) {
+    @include respond(laptop-s) {
         left: unset;
-        right: -10px !important;
+        right: -15px !important;
         transform: translateX(0);
     }
-    @media screen and (max-width: 1300px) {
-        right: 0 !important;
-        transform: translateX(0);
-    }
+    
     @media screen and (max-width: 768px) {
         display: none;
         visibility: hidden;
