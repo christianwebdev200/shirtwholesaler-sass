@@ -97,105 +97,104 @@ img {
     }
 }
 
-.swiper-container {
+.swiper-homepage-cards {
     width: 100%;
     overflow: visible !important;
-}
 
-.swiper-slide {
-    width: 16.66666%;
-    max-width: 16.666%;
-    @include respond(laptop-m) {
-        max-width: 23%;
-    }
-    @include respond(tab-port) {
-        max-width: 35%;
-    }
-    @include respond(mobile-lg) {
-        max-width: 40%;
-    }
-    @include respond(mobile-m) {
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 1100px) {
     .swiper-slide {
-        width: 33%;
+        max-width: 16.666%;
+        @include respond(laptop-m) {
+            max-width: 23%;
+        }
+        @include respond(tab-port) {
+            max-width: 35%;
+        }
+        @include respond(mobile-lg) {
+            max-width: 40%;
+        }
+        @include respond(mobile-m) {
+            max-width: 50%;
+        }
     }
-}
-
-.swiper-button-prev {
-    right: 65px !important;
-    left: auto !important;
-    @include respond(mobile-ms) {
-        right: 60px !important;
+    
+    @media (max-width: 1100px) {
+        .swiper-slide {
+            width: 33%;
+        }
     }
-    @include respond(mobile-m) {
-        right: 50px !important;
+    
+    .swiper-button-prev {
+        right: 65px !important;
+        left: auto !important;
+        @include respond(mobile-ms) {
+            right: 60px !important;
+        }
+        @include respond(mobile-m) {
+            right: 50px !important;
+        }
     }
-}
-
-.swiper-button-next {
-    right: 10 !important;
-    left: auto !important;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    top: -2% !important;
-    display: none !important;
-    // @include respond(laptop-m) {
-    //     display: flex !important;
-    // }
-    @include respond(mobile-lg) {
-        top: -8% !important;
+    
+    .swiper-button-next {
+        right: 10 !important;
+        left: auto !important;
     }
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    content: "next";
-    font-size: 25px !important;
-    height: 50px;
-    width: 50px;
-    min-width: 50px;
-    font-weight: 700;
-    display: flex;
-    background: $color-subtle-orange;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    color: #fff;
-    @include respond(mobile-lg) {
-        font-size: 22px !important;
-        height: 45px;
-        width: 45px;
-        min-width: 45px;
-    }
-    @include respond(mobile-ms) {
-        font-size: 20px !important;
-        height: 40px;
-        width: 40px;
-        min-width: 40px;
-    }
-    @include respond(mobile-m) {
-        font-size: 18px !important;
-        height: 35px;
-        width: 35px;
-        min-width: 35px;
-    }
-}
-
-@media only screen and (max-width:600px) {
+    
     .swiper-button-prev,
     .swiper-button-next {
+        top: -2% !important;
         display: none !important;
+        // @include respond(laptop-m) {
+        //     display: flex !important;
+        // }
+        @include respond(mobile-lg) {
+            top: -8% !important;
+        }
     }
-    .featured-container {
+    
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: "next";
+        font-size: 25px !important;
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+        font-weight: 700;
+        display: flex;
+        background: $color-subtle-orange;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        color: #fff;
+        @include respond(mobile-lg) {
+            font-size: 22px !important;
+            height: 45px;
+            width: 45px;
+            min-width: 45px;
+        }
+        @include respond(mobile-ms) {
+            font-size: 20px !important;
+            height: 40px;
+            width: 40px;
+            min-width: 40px;
+        }
+        @include respond(mobile-m) {
+            font-size: 18px !important;
+            height: 35px;
+            width: 35px;
+            min-width: 35px;
+        }
+    }
+    
+    @media only screen and (max-width:600px) {
         .swiper-button-prev,
         .swiper-button-next {
-            display: block !important;
+            display: none !important;
+        }
+        .featured-container {
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: block !important;
+            }
         }
     }
 }
