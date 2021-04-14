@@ -3,7 +3,6 @@
         margin-bottom: 10px;
         margin-top: 10px;
         border: 1px solid $color-gray-border !important;
-
         @include respond(mobile-lg) {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -27,10 +26,9 @@
 .brands-products-display {
     margin: 0;
     &__result {
-        .result-info {
-
-        }
-        .result-info-left, .result-info-right {
+        .result-info {}
+        .result-info-left,
+        .result-info-right {
             font-size: 14px !important;
         }
     }
@@ -61,7 +59,6 @@
 
 .pagination {
     display: flex;
-
     li {
         @include respond(mobile-lg) {
             padding: 10px 15px;
@@ -73,13 +70,69 @@
             margin-right: 3px;
         }
         @include respond(mobile-s) {
-                padding: 6px 10px;
-                font-size: 13px;
+            padding: 6px 10px;
+            font-size: 13px;
         }
     }
 }
 
 .pagnos {
-  margin: 0 !important;
-  padding: 0 !important;   
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+// targeting element base on this parent class
+.main-content--category {
+    .brands-products-display {
+        padding-top: 45px;
+        .brands-products-display__result {
+            display: none !important;
+        }
+        .pagnos {
+            display: none !important;
+        }
+        &.loading-spin {
+            position: relative;
+            &:after {
+                width: 50px;
+                height: 50px;
+                // position: absolute;
+                bottom: 0;
+                content: '';
+                display: block !important;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../css/ajax-loader.gif") center no-repeat!important;
+                background-size: cover !important;
+            }
+        }
+    }
+    .scroll-top {
+        position: fixed;
+        bottom: 85px;
+        width: 55px;
+        height: 55px;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        width: 55px;
+        height: 55px;
+        transform: rotate(-180deg);
+        border-radius: 100%;
+        right: 15px;
+        -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+        &--scrolling {
+            display: flex !important;
+            background: $color-white;
+            z-index: 99;
+            color: #282829 !important;
+            svg {
+                fill: #282829;
+            }
+        }
+    }
 }
