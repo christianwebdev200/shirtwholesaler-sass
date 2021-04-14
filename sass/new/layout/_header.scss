@@ -934,6 +934,19 @@ header {
 }
 
 .navbar {
+  .bulkDiscountNavbarBtn {
+    position: relative;
+    cursor: pointer;
+  }
+
+  @include respond(mobile-lg) {
+    .blkDiscNavbarModal {
+      width: 240px !important;
+      left: auto;
+      right: 0;
+    }
+  }
+
   &__header-icons {
     display: flex;
     padding-right: 10px;
@@ -997,5 +1010,44 @@ header {
 .header-icons-swiper {
   @media (max-width: 1400px) {
       display: none;
+  }
+
+  @include respond(tab-port) {
+    display: flex;
+  } 
+}
+
+
+.navbar__footer-icons {
+  @include respond(laptop-s) {
+    .header-icons-swiper {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+
+    .header-icons-slide {
+      width: 50%;
+      margin-bottom: 15px;
+      padding-right: 10px;
+      margin-right: 0 !important;
+      align-items: flex-start;
+
+      &:last-child {
+        width: 100%;
+      }
+
+      .icon {
+        width: 30px;
+      }
+
+      .text {
+        h2 {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+    }
+
+
   }
 }
