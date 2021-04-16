@@ -17,6 +17,11 @@
             user-select: none;
             // color: rgba($color-gray, 1);
             color: $color-orange;
+
+            a {
+                color: $color-orange;
+            }
+
             @include respond(tab-port) {
                 font-size: 20px;
             }
