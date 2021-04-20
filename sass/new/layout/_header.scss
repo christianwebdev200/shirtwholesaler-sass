@@ -499,6 +499,7 @@
                 .mega-menu {
                     opacity: 1;
                     visibility: visible;
+                    display: block;
                 }
             }
         }
@@ -864,6 +865,7 @@
 
 .show-sub-list {
     .mega-menu {
+        display: none;
         @include respond(laptop-m) {
             display: flex !important;
             opacity: 1 !important;
@@ -1025,6 +1027,12 @@ header {
     }
 }
 
+@media only screen and (max-width:1100px) {
+    .navbar__footer {
+        padding-top: 10px;
+    }
+}
+
 @media only screen and (max-width:1000px) {
     header {
         .navbar {
@@ -1067,6 +1075,10 @@ header {
                 &.header-icons-slide:first-child {
                     padding-right: 0 !important;
                 }
+                .span.here-text {
+                    display: none;
+                }
+                margin-bottom:5px !important;
             }
             .navbar__footer.show-sidebar {
                 padding-top: 10px !important;
@@ -1081,6 +1093,12 @@ header {
                         position: relative;
                         top: -4px;
                     }
+                }
+                .navbar__header-icons.header-icons-swiper {
+                    margin-bottom: 0 !important;
+                }
+                span.here-text {
+                    display: none !important;
                 }
             }
         }
