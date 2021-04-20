@@ -1039,6 +1039,15 @@ header {
             &__footer {
                 &.show-sidebar {
                     padding-top: 10px !important;
+                    .login-mobile {
+                        position: absolute;
+                        right: 10px;
+                        top: -8px;
+                        p.btn--icon__label {
+                            position: relative;
+                            top: -4px;
+                        }
+                    }
                 }
             }
             &__footer-icons {
