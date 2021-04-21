@@ -250,12 +250,26 @@ img {
 .ads-box-slide .ads-box__item {
     height: 100%;
 }
+.ads-box-next, .ads-box-prev {
+    opacity: .5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+.ads-box-next{
+    right: 20px;
+}
+ .ads-box-prev {
+    left: 20px;
+
+}
 
 .ads-box-pagination {
     position: relative !important;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 10px;
     margin-top: 5px;
 

@@ -932,17 +932,6 @@ header {
         position: relative;
         cursor: pointer;
     }
-<<<<<<< HEAD
-  }
-
-  &__header-icon {
-    display: flex;
-    align-items: center;
-    // width: 180px;
-    text-decoration: none;
-    color: $color-orange;
-=======
->>>>>>> 8c399808ac7240e74ccedcaba03b84793ef975a8
     @include respond(mobile-lg) {
         .blkDiscNavbarModal {
             width: 240px !important;
@@ -950,23 +939,6 @@ header {
             right: 0;
         }
     }
-<<<<<<< HEAD
-
-    .text {
-      color: $color-orange;
-      
-      h2 {
-        font-size: 14px;
-        font-weight: 600;
-        color: #F46E20 !important;
-      }
-      
-      p {
-        font-size: 12px;
-        color: #727272 !important;
-        @include respond(mobile-lg) {
-          font-size: 11px;
-=======
     &__header-icons {
         display: flex;
         padding-right: 10px;
@@ -976,7 +948,6 @@ header {
         }
         &>*:not(:last-child) {
             margin-right: 15px;
->>>>>>> 8c399808ac7240e74ccedcaba03b84793ef975a8
         }
     }
     &__header-icon {
@@ -1098,18 +1069,6 @@ header {
     }
 }
 
-<<<<<<< HEAD
-
-  }
-}
-.swiper-button-prev{
-  display: none !important;
-}
-
-.swiper-button-next {
-  display: none !important;
-}
-=======
 @media only screen and (max-width:480px) {
     header {
         .navbar {
@@ -1154,4 +1113,3 @@ header {
         }
     }
 }
->>>>>>> 8c399808ac7240e74ccedcaba03b84793ef975a8
