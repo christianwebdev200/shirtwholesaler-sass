@@ -965,23 +965,23 @@ header {
     align-items: center;
     // width: 180px;
     text-decoration: none;
-
+    color: $color-orange;
     @include respond(mobile-lg) {
         width: 50%;
     }
 
     .text {
-      
+      color: $color-orange;
       
       h2 {
         font-size: 14px;
         font-weight: 600;
-        color: #F46E20;
+        color: #F46E20 !important;
       }
       
       p {
         font-size: 12px;
-        color: #727272;
+        color: #727272 !important;
         @include respond(mobile-lg) {
           font-size: 11px;
         }
@@ -1050,4 +1050,11 @@ header {
 
 
   }
+}
+.swiper-button-prev{
+  display: none !important;
+}
+
+.swiper-button-next {
+  display: none !important;
 }

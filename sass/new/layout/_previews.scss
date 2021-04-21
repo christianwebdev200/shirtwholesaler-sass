@@ -5,53 +5,6 @@
     width: 100%;
 }
 
-.product-preview {
-    &__header {
-        display: flex;
-        padding: 8px 0;
-        h3,
-        h2 {
-            font-size: 24px;
-            font-weight: 600;
-            padding-top: 6px;
-            user-select: none;
-            // color: rgba($color-gray, 1);
-            color: $color-orange;
-
-            a {
-                color: $color-orange;
-            }
-
-            @include respond(tab-port) {
-                font-size: 20px;
-            }
-            @include respond(mobile-m) {
-                font-size: 16px;
-            }
-            @include respond(mobile-lg) {
-                // width: 75%;
-                width: 100%;
-            }
-        }
-    }
-    &__body {
-        // min-height: 400px;
-        .row {
-            &>* {
-                &:first-child {
-                    border-left: none !important;
-                }
-            }
-        }
-    }
-    &__column {
-        @media only screen and (max-width: 1100px) {
-            flex: 0 0 33.33%;
-            max-width: 33.33%;
-        }
-    }
-}
-
 .ads-box {
     padding: 0px;
     padding-bottom: 10px;
