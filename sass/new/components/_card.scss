@@ -301,7 +301,6 @@ $gray-new-border:#F2F2F2;
         width: 100%;
         border: none;
         outline: none;
-
         @include respond(tab-port) {
             padding: 10px 30px;
         }
@@ -331,7 +330,6 @@ $gray-new-border:#F2F2F2;
             flex: 0 0 80%;
             max-width: 80%;
             margin-left: 15px;
-
             @include respond(mobile-lg) {
                 margin-left: 10px;
             }
@@ -370,36 +368,60 @@ $gray-new-border:#F2F2F2;
             background: $red;
             h5 {
                 color: $redtext;
+                a {
+                    color: $redtext;
+                }
             }
             p {
                 color: $red_subtext;
+                a {
+                    color: $red_subtext;
+                }
             }
         }
         &--green {
             background: $green;
             h5 {
                 color: $greentext;
+                a {
+                    color: $greentext;
+                }
             }
             p {
                 color: $green_subtext;
+                a {
+                    color: $green_subtext;
+                }
             }
         }
         &--orange {
             background: $orange;
             h5 {
                 color: $orangetext;
+                a {
+                    color: $orangetext;
+                }
             }
             p {
                 color: $orange_subtext;
+                a {
+                    color: $orange_subtext;
+                }
             }
         }
         &--yellow {
             background: $yellow;
             h5 {
                 color: $yellowtext;
+                a {
+                    color: $yellowtext;
+                }
             }
             p {
                 color: $yellow_subtext;
+                a {
+                    color: $yellow_subtext;
+                }
             }
         }
     }
