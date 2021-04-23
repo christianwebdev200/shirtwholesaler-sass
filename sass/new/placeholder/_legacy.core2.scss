@@ -453,22 +453,6 @@
     }
 }
 
-.review {
-    display: block;
-    height: auto !important;
-    .sa-info:first-child {
-        margin-bottom: 10px;
-    }
-    .sa_comments {
-        display: block !important;
-        width: auto !important;
-        &::after,
-        &::before {
-            display: none !important;
-        }
-    }
-}
-
 .prd-carousel .prd-arrow {
     display: flex !important;
 }
