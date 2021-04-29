@@ -2,7 +2,7 @@
   display: flex;
   background-color: $color-white;
   color: $color-black !important;
-  padding: 40px 0;
+  padding: 0 0 40px 0;
   width: 100%;
   float: left;
   min-height: 700px;
@@ -201,6 +201,8 @@
   }
   &__top {
     width: 80%;
+    flex-grow: 1;
+    flex-shrink: 0;
 
     @include respond(desktop-wide){
       width: 100%;
