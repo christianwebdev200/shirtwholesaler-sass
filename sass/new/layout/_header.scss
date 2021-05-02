@@ -31,7 +31,7 @@
         color: #fff;
         margin: 10px 0 10px 10px;
         background: none;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             display: flex;
         }
         @include respond(mobile-lg) {
@@ -192,7 +192,7 @@
         z-index: 150;
         height: auto;
         padding: 15px 0;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             height: 100px;
         }
         @include respond(tab-port) {
@@ -318,7 +318,7 @@
     }
     &__search-btn {
         display: none;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             display: block;
         }
     }
@@ -329,7 +329,7 @@
         border-top: 1px solid $color-lightgray11;
         border-bottom: 1px solid $color-lightgray11;
         @include transition();
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             .mega-menu,
             .navbar__footer-more,
             .navbar__footer-brands {
@@ -347,7 +347,7 @@
             display: none;
             flex-direction: column;
             width: 100%;
-            @include respond(laptop-m) {
+            @include respond(laptop-s) {
                 display: flex;
             }
             .navbar__search {
@@ -376,21 +376,21 @@
                 fill: $color-orange;
             }
         }
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             // display: none;
             transform: translate(-140%, 0);
         }
         & .container {
             display: flex;
             height: auto !important;
-            @include respond(laptop-m) {
+            @include respond(laptop-s) {
                 flex-direction: column;
             }
             @include respond(laptop) {
                 padding: 0;
             }
         }
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             position: fixed;
             top: 0;
             left: 0;
@@ -416,7 +416,7 @@
         box-shadow: 0 0 14px rgba($color-black, 0.1);
         // left: 0;
         left: auto;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             min-width: 100%;
         }
     }
@@ -424,13 +424,14 @@
         display: none;
         position: absolute;
         right: 0;
-        z-index: 2;
+        z-index: 100;
         width: 100%;
         background-color: $color-white;
         min-width: 220px;
         box-shadow: 0 0 14px rgba($color-black, 0.1);
         padding: 15px 0;
-        @include respond(laptop-m) {
+        
+        @include respond(laptop-s) {
             width: 100%;
             min-width: 100%;
         }
@@ -488,21 +489,27 @@
         // justify-content: space-between;
         justify-content: center;
         list-style: none;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             flex-direction: column;
         }
         @include respond(mobile-lg) {
             padding-bottom: 100px;
         }
-        li {
-            &:hover {
-                .mega-menu {
-                    opacity: 1;
-                    visibility: visible;
-                    display: flex;
-                }
-            }
-        }
+        // li {
+        //     &:hover {
+        //         .mega-menu {
+        //             opacity: 1;
+        //             visibility: visible;
+        //             display: flex;
+
+        //             @include respond(laptop-s) {
+        //                 opacity: unset;
+        //                 visibility: unset;
+        //                 display: unset;
+        //             }
+        //         }
+        //     }
+        // }
     }
     &__footer-item {
         margin: 0 20px;
@@ -517,24 +524,24 @@
     }
     &__footer-item:hover .mega-menu {
         display: flex;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             display: none;
         }
     }
     &__footer-item:hover &__footer-more {
         display: block;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             display: none;
         }
     }
     &__footer-item:hover &__footer-brands {
         display: block;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             display: none;
         }
     }
     .mega-menu {
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             top: 0;
         }
     }
@@ -563,7 +570,7 @@
             margin-left: 10px;
             position: relative;
             // top: -3px;
-            @include respond(laptop-m) {
+            @include respond(laptop-s) {
                 display: none;
             }
         }
@@ -584,10 +591,11 @@
         //     padding: 10px 8px !important;
         // }
         @include respond(laptop) {
-            font-size: 16px;
+            font-size: 14px;
             padding: 10px 8px !important;
         }
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
+            // font-size: 14px;
             padding: 5px !important;
         }
         // @include respond(mobile-lg) {
@@ -602,7 +610,7 @@
     &__footer-item:hover &__footer-header {
         background-color: $color-white;
         color: $color-gray;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             background-color: unset;
             color: $color-white;
         }
@@ -618,7 +626,7 @@
     }
     &__footer-item-btn {
         display: none;
-        @include respond(laptop-m) {
+        @include respond(laptop-s) {
             display: block;
             margin-left: auto;
             padding: 10px;
@@ -653,7 +661,7 @@
         // @include respond(laptop) {
         //     font-size: 15px;
         // }
-        // @include respond(laptop-m) {
+        // @include respond(laptop-s) {
         //     font-size: 14px;
         // }
         @include respond(mobile-lg) {
@@ -865,12 +873,12 @@
 
 .show-sub-list {
     .mega-menu {
-        display: none;
-        @include respond(laptop-m) {
-            display: flex !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-        }
+        // display: none;
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        // @include respond(laptop-s) {
+        // }
     }
     & .navbar__footer-header {}
     & .navbar__footer-item-btn img {

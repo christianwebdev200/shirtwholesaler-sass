@@ -1,0 +1,106 @@
+<div class="row main-content__thumbnails">
+
+
+
+    <div class="col-lg-3 main-content__thumbnails--item">
+        <button class="card card__icon card__icon--red"
+            id="blkDiscBtn">
+            <div class="card__icon--image">
+                <img src="https://www.shirtwholesaler.com/images/icon1.png"
+                    alt="Bulk Discount">
+            </div>
+            <div class="card__icon--text">
+                <h5> Bulk Discount </h5>
+                <p>Direct Wholesale Pricing</p>
+            </div>
+        </button>
+        <div class="modal--discount"
+            id="blkDiscModal"
+            style="display: none;">
+            <h2>Volume Discounts</h2>
+            <h4>Starting From</h4>
+            <h4
+                style="float:left; width:100%;color:#d83939;text-align:left;font-size:18px;font-weight:500;margin-left:14px">
+                Save 5% Over $250<br>Save 8% Over $500<br>Save 10% Over
+                $750<br>Save 12% Over $1,000<br>Save 14% Over $2,500</h4>
+            <h5><br></h5>
+            <br>
+            <h5>
+                <p style="text-align:center">** All warehouses are currently</p>
+            </h5>
+            <h4>
+                <p
+                    style="text-align:center;font-size:16px;color:green;font-weight:600">
+                    operating as normal.</p>
+            </h4>
+            <h5>
+                <p style="text-align:center;font-size:13px;color:navy"> We will
+                    offer customer support by Chat and Email only.</p>
+            </h5>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var bulkModal = $('#blkDiscModal')
+        $('#blkDiscBtn').click(function () {
+            console.log('Hello')
+            $('#blkDiscModal').toggle();
+
+            // if ($('#blkDiscModal').is(":visible")) {
+            // } else {
+            //     $('#blkDiscModal').show();
+
+            // }
+        })
+
+        // $(document).mouseup(function(e) {
+        //     var container = $('#blkDiscModal')
+        //     // if the target of the click isn't the container nor a descendant of the container
+        //     if (!container.is(e.target) && container.has(e.target).length === 0) {
+        //         container.hide();
+        //     }
+        // });
+    </script>
+    <div class="col-lg-3 main-content__thumbnails--item">
+        <a href="https://www.shirtwholesaler.com/cms/page/shipping">
+            <div class="card card__icon card__icon--yellow">
+                <div class="card__icon--image">
+                    <img src="https://www.shirtwholesaler.com/images/icon2.png"
+                        alt="Bulk Discount">
+                </div>
+                <div class="card__icon--text">
+                    <h5> Free Shipping Over $89 </h5>
+                    <p style="font-size: 90%;font-weight: 500">Orders placed
+                        before 1pm ship the same day</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 main-content__thumbnails--item">
+        <a href="https://www.shirtwholesaler.com/returns">
+            <div class="card card__icon card__icon--green">
+                <div class="card__icon--image">
+                    <img src="https://www.shirtwholesaler.com/images/icon3.png"
+                        alt="Bulk Discount">
+                </div>
+                <div class="card__icon--text">
+                    <h5> Free Easy Returns </h5>
+                    <p style="color: green;font-weight: 500">30 Days no
+                        questions asked</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 main-content__thumbnails--item">
+        <div class="card card__icon card__icon--orange">
+            <div class="card__icon--image">
+                <img src="https://www.shirtwholesaler.com/images/icon4.png"
+                    alt="Bulk Discount">
+            </div>
+            <div class="card__icon--text">
+                <h5>Blowout Bargains </h5>
+                <p>Save as much as you order</p>
+            </div>
+        </div>
+    </div>
+
+</div>
