@@ -1,0 +1,57 @@
+.swiper-product-button-next {
+    width: 25px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    cursor: pointer;
+    &:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1;
+        content: "next";
+        color: $color-orange;
+    }
+    &.swiper-button-disabled {
+        display: none !important;
+    }
+    &:hover {
+        opacity: .8 !important;
+    }
+}
+
+.swiper-product-button-prev {
+    width: 25px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    cursor: pointer;
+    &:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1;
+        content: "prev";
+        color: $color-orange;
+    }
+    &.swiper-button-disabled {
+        display: none !important;
+    }
+    &:hover {
+        opacity: .8 !important;
+    }
+}
