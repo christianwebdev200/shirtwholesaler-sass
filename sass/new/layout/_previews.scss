@@ -20,11 +20,17 @@
         @media only screen and (max-width: 768px) {
             display: none;
         }
+        img {
+            height: auto;
+        }
     }
     &__mobile {
         display: none;
         @media only screen and (max-width: 768px) {
             display: block;
+        }
+        img {
+            height: auto;
         }
     }
     h5 {
