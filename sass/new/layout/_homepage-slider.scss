@@ -25,6 +25,9 @@
     &:hover {
         opacity: .8 !important;
     }
+    @media only screen and (max-width:600px) {
+        display: none !important;
+    }
 }
 
 .swiper-product-button-prev {
@@ -53,5 +56,8 @@
     }
     &:hover {
         opacity: .8 !important;
+    }
+    @media only screen and (max-width:600px) {
+        display: none !important;
     }
 }
