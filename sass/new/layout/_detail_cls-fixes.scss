@@ -14,4 +14,14 @@
     .product-title__action {
         min-height: 25px;
     }
+    .product-image {
+        min-height: 200px;
+        height: auto;
+        display: block;
+    }
+    .page-detail-display {
+        min-height: 700px !important;
+        display: block !important;
+        overflow: auto;
+    }
 }
