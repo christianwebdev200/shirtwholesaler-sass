@@ -97,6 +97,25 @@ img {
     }
 }
 
+.related-items-container,
+.customers-viewed-container {
+    .swiper-slide {
+        max-width: 16.666%;
+        @include respond(laptop-m) {
+            max-width: 23%;
+        }
+        @include respond(tab-port) {
+            max-width: 35%;
+        }
+        @include respond(mobile-lg) {
+            max-width: 40%;
+        }
+        @include respond(mobile-m) {
+            max-width: 50%;
+        }
+    }
+}
+
 .swiper-homepage-cards {
     width: 100%;
     overflow: visible !important;
