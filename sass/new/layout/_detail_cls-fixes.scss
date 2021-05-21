@@ -10,7 +10,7 @@
     min-height: 30px;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
     .page-detail-display__top-section {
         min-height: auto !important;
     }
@@ -54,10 +54,10 @@
         font-size: inherit !important;
         font-weight: bold !important;
     }
-    .product-main-info-mobile__star .product-title__header a {
-        display: flex !important;
-        transform: scale(.8)translate(-25px, 0);
-    }
+    // .product-main-info-mobile__star .product-title__header a {
+    //     display: flex !important;
+    //     transform: scale(.8)translate(-25px, 0);
+    // }
     .product-item-image.active {
         display: block !important;
         clear: both !important;
@@ -124,5 +124,49 @@
     // }
     .product-detail-box {
         min-height: 500px;
+    }
+    .mobile_top_header {
+        // display: none;
+        clear: both;
+        width: 100%;
+        min-height: 70px;
+        .product-title__header {
+            min-height: 25px;
+            .clear-rating .clear-rating-active {
+                font-size: inherit !important;
+            }
+            a {
+                width: 100%;
+                display: flex !important;
+                clear: both;
+                float: none !important;
+                display: block !important;
+                overflow: auto;
+                >div {
+                    float: left;
+                }
+            }
+        }
+        form {
+            display: none !important;
+        }
+    }
+    .stars-rating .product-main-info-mobile__starting {
+        justify-content: flex-start !important;
+    }
+    .mobile--only.star-rating-section .count {
+        // color: #fff;
+        color: #565656;
+        font-weight: bold;
+    }
+    .mobile--only.star-rating-section {
+        position: absolute;
+        z-index: 99;
+        // bottom: 10px;
+        // left: 0;
+        // transform: scale(.8)translate(-15px, 0px);
+        top: 35px;
+        right: 0px;
+        transform: scale(0.8) translate(20px, 0px);
     }
 }
