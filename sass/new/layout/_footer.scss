@@ -55,6 +55,11 @@
         @include respond(tab-port) {
             font-size: 15px;
         }
+        @media only screen and (max-width:1199px) {
+            height: auto;
+            overflow: auto;
+            box-sizing: border-box;
+        }
         .box-1-inner {
             img {
                 // height: 70px !important;
@@ -228,6 +233,9 @@
         @include respond(tab-port) {
             .footer__left-content {
                 margin-bottom: 0 !important;
+                @media only screen and (max-width: 480px) {
+                    padding-right: 13px !important;
+                }
             }
             .footer__list-holder--item {
                 text-align: left;
@@ -241,6 +249,11 @@
             .footer__ribbon {
                 text-align: center;
                 display: block;
+            }
+        }
+        @media only screen and (max-width: 382px) {
+            .footer__list-holder--item {
+                padding-right: 10px !important;
             }
         }
         @media only screen and (max-width: 768px) {
