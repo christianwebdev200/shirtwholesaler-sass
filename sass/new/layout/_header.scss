@@ -252,17 +252,17 @@
             width: 220px;
             min-width: 220px;
         }
-        @media only screen and (max-width: 375px) {
-            // width: 195px;
-            width: 195px;
-            min-width: 195px;
-        }
-        @media only screen and (max-width: 355px) {
+        @media only screen and (max-width: 386px) {
             // width: 195px;
             width: 185px;
             min-width: 185px;
         }
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 355px) {
+            // width: 195px;
+            width: 175px;
+            min-width: 175px;
+        }
+        @media only screen and (max-width: 327px) {
             width: 145px;
             min-width: 145px;
         }
@@ -309,6 +309,9 @@
                 margin-right: 15px;
             }
             @media only screen and (max-width: 320px) {
+                margin-right: 5px;
+            }
+            @media only screen and (max-width:340px) {
                 margin-right: 5px;
             }
         }
@@ -430,7 +433,6 @@
         min-width: 220px;
         box-shadow: 0 0 14px rgba($color-black, 0.1);
         padding: 15px 0;
-        
         @include respond(laptop-s) {
             width: 100%;
             min-width: 100%;
@@ -501,7 +503,6 @@
         //             opacity: 1;
         //             visibility: visible;
         //             display: flex;
-
         //             @include respond(laptop-s) {
         //                 opacity: unset;
         //                 visibility: unset;
@@ -585,14 +586,15 @@
             padding: 15px;
         }
         @media only screen and (max-width: 1380px) {
-            padding: 15px 12px;
+            // padding: 15px 12px;
+            padding: 15px 10px;
         }
         // @media only screen and (max-width:1280px) {
         //     padding: 10px 8px !important;
         // }
         @include respond(laptop) {
             font-size: 14px;
-            padding: 10px 8px !important;
+            padding: 10px 5px !important;
         }
         @include respond(laptop-s) {
             // font-size: 14px;
@@ -605,6 +607,9 @@
         @include respond(mobile-m) {
             // font-size: 16px;
             padding: 8px 10px;
+        }
+        @media only screen and (max-width: 1016px) and (min-width:1001px) {
+            font-size: 13px;
         }
     }
     &__footer-item:hover &__footer-header {
@@ -683,6 +688,10 @@
                 width: 20px;
                 height: 20px;
                 top: -42px;
+            }
+            @media only screen and (max-width:327px) {
+                left: -15px;
+                transform: scale(.9);
             }
             @include respond(tab-port) {
                 width: 20px;

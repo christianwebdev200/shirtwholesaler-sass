@@ -1,0 +1,18 @@
+@media only screen and (max-width:1000px) and (min-width:769px) {
+    #frmCheckoutS .checkout-row-full input {
+        width: 74% !important;
+    }
+    .checkout-notification {
+        width: 74% !important;
+    }
+    #frmCheckoutS .checkout-row-full input#sub-check {
+        width: 20px !important;
+    }
+    .checkout-box .c-code input[type="text"] {
+        width: 74% !important;
+    }
+    .checkout-row-half input,
+    .checkout-row-half select {
+        width: 74%;
+    }
+}
