@@ -171,6 +171,18 @@
     &__right-content {
         flex: 0 0 82%;
         max-width: 82%;
+
+        .filter-selected {
+            margin-bottom: -45px;
+            max-width: 80%;
+            z-index: 10;
+
+            @include respond(mobile-ms) {
+                margin-bottom: 0;
+                max-width: 100%;
+            }
+        }
+
         @include respond(laptop-s) {
             padding: 0 18px !important;
         }

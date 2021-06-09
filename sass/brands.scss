@@ -15,6 +15,7 @@
 @import "./new/layout/homepage-slider";
 @import "./new/pages/brands-sort";
 @import "./new/layout/brand-banners";
+@import "./new/components/filter";
 .main-content__sidebar {
     @include respond(laptop-m) {
         display: none;

@@ -1,0 +1,47 @@
+.filter-selected {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(mobile-lg) {
+        padding-left: 5px;
+    }
+
+    &>*:not(:last-child) {
+        margin-right: 10px;
+    }
+    &__item {
+        margin: 5px 0;
+    
+        @include respond(mobile-lg) {
+            margin: 3px 0;
+        }
+        
+    }
+    &__chip {
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        background-color: $color-white-10;
+        text-decoration: none;
+        color: $color-dark;
+        user-select: none;
+        font-weight: 700;
+        border-radius: 3px;
+        @include respond(mobile-lg) {
+            font-size: 15px;
+            padding: 5px 10px;
+        }
+        @include respond(mobile-m) {
+            font-size: 14px;
+            padding: 4px 8px;
+        }
+
+        .exit {
+            margin-left: 15px;
+            color: $color-orange;
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+}
