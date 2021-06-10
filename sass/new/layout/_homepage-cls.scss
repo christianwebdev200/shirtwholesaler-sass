@@ -15,7 +15,47 @@
     .ads-box {
         // min-height: 250px !important;
     }
-    .main-content__thumbnails {
-        min-height: 200px;
+    // .main-content__thumbnails {
+    //     min-height: 200px;
+    // }
+    // .ads-box.ads-box-container.swiper-container {
+    //     width: 100%;
+    //     min-height: 245px;
+    // }
+    // .ads-box-container .ads-box__item {
+    //     width: 100%;
+    //     min-height: 250px;
+    // }
+    // a.ads-box-slide.swiper-slide.swiper-slide-active {
+    //     min-height: 250px;
+    // }
+    .swiper-homepage-cards {
+        width: 100%;
+        min-height: 230px;
+        .swiper-wrapper {
+            min-height: 230px;
+        }
+    }
+    .product-preview__header h3 a,
+    .product-preview__header h2 a {
+        display: block;
+        width: 100%;
+    }
+    .slider-product__first {
+        min-height: 250px;
+    }
+    .slider-product {
+        min-height: 240px;
+    }
+}
+
+.main-banner-slider {
+    min-height: 250px;
+    position: relative;
+    display: block;
+    &:after {
+        display: block;
+        content: '';
+        clear: both;
     }
 }
