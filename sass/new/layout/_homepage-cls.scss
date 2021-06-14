@@ -47,6 +47,32 @@
     .slider-product {
         min-height: 240px;
     }
+    .row.main-content__thumbnails {
+        max-height: 200px;
+    }
+    .main-banner-slider {
+        height: 354px;
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .main-banner-slider {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .main-banner-slider {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .main-banner-slider {
+        height: auto;
+        min-height: 260px !important;
+    }
 }
 
 .main-banner-slider {
