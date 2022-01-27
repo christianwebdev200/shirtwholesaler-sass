@@ -1,0 +1,25 @@
+body {
+    &.ie10 {
+
+
+// ************************************
+
+    .navbar__main {
+        max-width: 100% !important;
+        margin:auto;
+    }
+    .navbar__right-holder {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    // checkout 
+    .checkout-payrow select, .checkout-payrow input, .checkout-row-full select, .checkout-row-full input {
+        min-height: 40px;
+    }
+
+// ************************************
+
+    } 
+}
