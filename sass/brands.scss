@@ -17,6 +17,7 @@
 @import "./new/layout/brand-banners";
 @import "./new/components/filter";
 @import "./new/layout/brand-cls";
+@import "./new/layout/brand-scroll-pagination";
 .main-content__sidebar {
     @include respond(laptop-m) {
         display: none;
