@@ -1,0 +1,105 @@
+.site-center {
+    .main-container {
+        max-width: 1074px;
+        margin: auto;
+        float: none;
+    }
+    #fourth {
+        .checkout-pay-half {
+            .checkout-payrow {
+                .double,
+                .s-code,
+                input {
+                    width: 62% !important;
+                    @media only screen and (max-width: 1090px) and (min-width: 768px) {
+                        width: 72% !important;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        width: 100% !important;
+                    }
+                }
+                label,
+                .exp {
+                    @media only screen and (max-width: 1090px) and (min-width: 768px) {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            @media only screen and (max-width: 1090px) {
+                width: 100%;
+            }
+        }
+    }
+    #ck-first {
+        .checkout-row-full {
+            label {
+                @media only screen and (max-width: 1000px) {
+                    text-align: left;
+                }
+            }
+            .checkout-notification,
+            input,
+            select {
+                @media only screen and (max-width: 1000px) and (min-width: 768px) {
+                    width: 76% !important;
+                }
+            }
+        }
+        .checkout-row-half {
+            input {
+                @media only screen and (max-width: 1070px) {
+                    margin-left: 8px;
+                }
+            }
+        }
+        .checkout-row-full {
+            input {
+                @media only screen and (max-width: 1070px) {
+                    margin-left: 8px;
+                }
+            }
+        }
+        .same-address-box input[type="checkbox"] {
+            @media only screen and (max-width: 1000px) {
+                margin-left: 20px;
+            }
+        }
+    }
+    .checkout-order-detail {
+        table {
+            tr {
+                td:last-child {
+                    @media only screen and (max-width: 570px) {
+                        top: inherit;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// adjustment overwrite 
+a.footer__logo {
+    img {
+        width: 300px;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+.info-popup-btn {
+    background-size: cover !important;
+}
+
+.ship-option {
+    h3 {
+        display: inline-block;
+    }
+    small {
+        display: block;
+        width: 100%;
+    }
+}
