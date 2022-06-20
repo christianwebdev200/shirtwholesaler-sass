@@ -123,6 +123,12 @@ mobile-s : 0 - 320px (iphone 5/se or Galaxy fold)
     }
 }
 
+@mixin custom-respond-max($breakpoint2) {
+    @media (max-width: $breakpoint2) {
+        @content;
+    }
+}
+
 @mixin hoverImage {
     transform: scale(1.05);
     padding-left: 5px;

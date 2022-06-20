@@ -119,6 +119,13 @@ img {
 .swiper-homepage-cards {
     width: 100%;
     overflow: visible !important;
+    min-height: 400px;
+    @include custom-respond-max(1400px) {
+        min-height: 300px;
+    }
+    .swiper-wrapper {
+        height: 100% !important;
+    }
     .swiper-slide {
         max-width: 16.666%;
         @include respond(laptop-m) {
