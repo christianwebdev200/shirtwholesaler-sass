@@ -1,0 +1,197 @@
+.styleprice  {
+
+    &__filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__header {
+        padding-right: 0;
+    }
+    &__filter-item {
+            width: calc(100%/5);
+            padding: 5px;
+
+            @media only screen and (max-width:700px) {
+                width: 100%;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 10px;
+                height: 45px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+                height: 45px;
+                @media only screen and (max-width:1300px) {
+                    font-size: .9em; 
+                }
+            }
+    }
+
+    &__checkbox {
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+        @media only screen and (min-width:768px) {
+            position: absolute;
+            z-index: 99;
+            left: 200px;
+            top: 10px;  
+        }
+        label {
+            cursor: pointer; 
+        }
+        >div {
+            margin-right: 10px;
+        }
+    }
+
+
+    &__filter-item {
+        width: 16%;
+        @media only screen and (max-width:1000px) {
+            width: 20%;
+        }
+    }
+
+    &__filter-searchbutton {
+        width: 10%;
+
+        @media only screen and (max-width:1000px) {
+            width: 50%;
+        }
+        @media only screen and (max-width:700px) {
+            width: 50%;
+        }
+        button {
+            border: 0;
+            background: $color-primary;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+    &__content {
+        min-height: 600px;
+        position: relative;  
+        padding-top: 0;
+      
+        #styleprice-table_wrapper {
+            position: relative;
+            min-height: 500px; 
+        }
+
+        #styleprice-table_processing {
+            font-weight: bold;
+            // top: 40% !important;
+            // top: 240px !important;
+            
+            // bottom: 0; 
+            margin: auto;
+            left: 0;
+            bottom: inherit; 
+            right: 0;
+            height: 45px;
+            top: 0;
+
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.3em;
+            // padding: 10px;
+            width: 100%;
+            height: 100%;
+            padding-top:240px;
+            background: rgba(256,256,256,.7);
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+
+
+    .dataTables_info {
+        font-weight: bold;
+        display: flex;
+        float: left;
+        @media only screen and (max-width:700px) {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+     }
+
+     //  table head
+     #styleprice-table {
+        thead {
+            position: relative;
+            z-index: 9;
+        }
+     }
+
+     #styleprice-table_length {
+        position: relative;
+        z-index: 9;
+        padding-top: 10px;
+        padding-left: 10px;
+        min-height: 40px;
+     } 
+
+    //  pagination
+    .dataTables_paginate {
+        float: right;
+        display: flex;
+        position: relative;
+        z-index: 9;
+
+        @media only screen and (max-width:700px) {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        a {
+            display: inline-block;
+            cursor: pointer;
+            margin: 0 3px;
+            padding: 2px 8px;
+            outline: none !important; 
+            &:hover {
+                opacity: .5;
+            }
+        }
+        .paginate_button.previous,
+        .paginate_button.next {
+            background: $color-primary !important;
+            color: #fff !important;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a.paginate_button {
+            border: 2px solid $color-primary !important;
+            border-radius: 5px;
+            font-weight: bold;
+            background: transparent;
+            color: $color-primary !important; 
+            &.current {
+                background: $color-primary !important;
+                color: #fff !important;
+            }
+        }
+    }
+
+}

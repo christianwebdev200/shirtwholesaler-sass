@@ -1,0 +1,19 @@
+.main  {
+    padding-left: 50px;
+    .row {
+        margin: 0;
+    }
+}
+
+#taxes-table_wrapper {
+    #taxes-table_length {
+        display: block;
+        float: left;
+    }
+}
+
+
+
+.btnGenerateCSV {
+    background: $color-orange !important;
+}

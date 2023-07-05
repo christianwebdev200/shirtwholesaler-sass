@@ -1,0 +1,56 @@
+    ul.nav-pills,
+    ul.nav.nav-pills.nav-daily {
+      padding: 0;
+      background: #e7e7e7;
+      margin-bottom: 5px;
+      display: flex;
+      li {
+        // flex: 0 0 33.33%;
+        // max-width: 33%;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        a {
+          border-radius: 0;
+        }
+      }
+    }
+  
+    .modal.fade.in {
+      max-width: auto !important;
+    }
+  
+    #popupModal {
+      max-width: 60%;
+  
+      @include respond(mobile-lg) {
+        max-width: 100%;
+        padding: 0;
+        width: 100% !important;
+  
+        .modalOuput {
+            overflow: auto;
+        }
+      }
+  
+      .modal-dialog {
+        width: auto !important;
+      }
+    }
+  
+    .cog-container {
+  
+      @include respond(mobile-lg) {
+          table {
+              display: block;
+              width: 100%;
+              overflow: auto;
+          }
+  
+      }
+    }
+  
+    input {
+      font-size: 18px;
+    }
+  

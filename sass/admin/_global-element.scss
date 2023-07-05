@@ -1,0 +1,218 @@
+$color-orange:#ff853f;
+$color-blue:#0476cb;
+
+.global-element {
+    &__table {
+        position: relative;
+        .dataTables_length {
+            position: absolute !important;
+            top: 0;
+        }
+        table {
+            padding-top: 35px !important;
+        }
+    }
+    &__checkboxes {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        left: 200px;
+        top: 8px;
+        z-index: 2;
+        &>*:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+    &__item {
+        position: relative;
+        padding: 0 5px;
+        label.control-label {
+            position: absolute;
+            top: -20px;
+            @media only screen and (max-width: 769px) {
+                position: inherit;
+                top: 0px;
+            }
+        }
+        label {
+            display: block;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            height: 45px;
+            display: block;
+            max-width: 100% !important;
+            font-weight: bold;
+        }
+        button {
+            border: 0;
+            font-weight: bold;
+            background: $color-orange;
+            padding: 10px 15px;
+            height: 45px;
+            color: #fff;
+            width: 100%;
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 769px) {
+            width: 100% !important;
+            margin-bottom: 14px;
+        }
+    }
+    &__filter {
+        display: flex;
+        flex-wrap: wrap;
+        right: 0 !important;
+    }
+    &__search-box {
+        width: 20%;
+        padding-left: 0;
+    }
+    &__button-search {
+        width: 10%;
+        padding-right: 0;
+    }
+    &__date {
+        width: 15%;
+    }
+    &__body {
+        .dataTables_wrapper {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+        .dataTables_processing {
+            font-weight: bold;
+            margin: auto;
+            left: 0;
+            bottom: inherit;
+            right: 0;
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.3em;
+            padding-top: 240px !important;
+            background: rgba(256, 256, 256, 0.7);
+        }
+        .dataTables_processing {
+            left: 0 !important;
+            top: 0 !important;
+            width: 100% !important;
+            margin: 0 !important;
+            height: 100% !important;
+        }
+        .dataTables_info {
+            font-weight: bold;
+            display: flex;
+            float: left;
+            @media only screen and (max-width: 700px) {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+        }
+        .dataTables_length {
+            position: relative;
+            z-index: 9;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .dataTables_paginate {
+            float: right;
+            display: flex;
+            position: relative;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            @media only screen and (max-width: 700px) {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            a {
+                display: inline-block;
+                cursor: pointer;
+                margin: 0 3px;
+                padding: 2px 8px;
+                outline: none !important;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            .paginate_input {
+                width: 40px;
+                border-radius: 3px;
+                display: flex;
+                margin: 0 10px;
+                border: 1px solid lightgrey;
+                text-align: center;
+            }
+            .paginate_total {
+                margin: 0 12px 0 5px;
+            }
+            .paginate_button {
+                &.previous {
+                    margin-right: 5px;
+                }
+                &.next {
+                    margin-left: 5px;
+                }
+                &.next,
+                &.previous,
+                &.last,
+                &.first {
+                    background: $color-orange !important;
+                    color: #fff !important;
+                    border-radius: 5px;
+                    font-weight: bold !important;
+                    padding: 5px 8px !important;
+                }
+                &.disabled {
+                    background: lightgrey !important;
+                    border: none !important;
+                }
+            }
+            a.paginate_button {
+                border: 2px solid $color-orange !important;
+                border-radius: 5px;
+                font-weight: bold;
+                background: transparent;
+                color: $color-orange !important;
+                &.current {
+                    background: $color-orange !important;
+                    color: #fff !important;
+                }
+            }
+        }
+        .stock-notification-request {
+            &__checkboxes {
+                display: flex;
+                position: absolute;
+                align-items: center;
+                left: 200px;
+                top: 8px;
+                z-index: 2;
+                &>*:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    } //end
+}
+
+.d-flex {
+    display: flex;
+}

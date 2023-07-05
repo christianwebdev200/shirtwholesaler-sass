@@ -1,0 +1,17 @@
+#sidebar-collapse.sidebar:hover {
+    width: 210px !important;
+    background: #fff;
+}
+
+
+#sidebar-collapse.sidebar {
+    position: fixed;
+    overflow-x: inherit;
+    overflow-y: scroll;
+    min-width: 105px;
+    width: 105px;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 100%;
+}

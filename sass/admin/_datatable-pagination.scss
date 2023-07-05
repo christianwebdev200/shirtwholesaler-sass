@@ -1,0 +1,157 @@
+// with class of top and bottom 
+#resaleOrdersGuest-table_wrapper,
+#resaleOrdersGuest-table,
+#returnOrder-table_wrapper,
+#resaleOrders-table_wrapper,
+#users-table_wrapper,
+#userLogs-table_wrapper,
+#transactionFailures-table_wrapper,
+#qtythreshold-table_wrapper,
+#lowInventory-table_wrapper,
+#page-page-list_wrapper,
+#itemreport-table_wrapper,
+#donotdisplay-table_wrapper,
+#searchLogs-table_wrapper,
+#quickfilterlogs-table,
+#quickfilters-table_wrapper,
+#page-page-list_wrapper,
+#orders-table_wrapper,
+.servicefeedback,
+#sitemap-table_wrapper,
+#midsections-table_wrapper,
+#menucolors-table_wrapper {
+    .dataTables_paginate.paging_input {
+        // display: flex;
+        span {
+            margin-left: 5px;
+        }
+    }
+    .top,
+    .bottom {
+        display: flex;
+        justify-content: space-between !important;
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+        }
+        .clear {
+            display: none;
+        }
+    }
+}
+
+// /admin/orderalertlookup
+// /admin/alertordersreport
+// admin/gtinlookup
+//admin/quickfilters
+.orders,
+.resaleorders,
+.userdashboard,
+.userlogs,
+.transaction,
+.taxjarreport,
+.reports,
+.itemreport,
+.shopperapproved,
+.donotdisplayreport,
+.searchlogs,
+.categorystyles,
+.quickfilters,
+.gtinlookup,
+.styleprice,
+.stocknotificationrequest,
+.orderalertlookup,
+.alertordersreport {
+    .dataTables_info {
+        float: left;
+    }
+    .dataTables_paginate {
+        float: right;
+        display: flex;
+        position: relative;
+        z-index: 9;
+        // display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        span {
+            margin-left: 5px;
+        }
+        @media only screen and (max-width: 700px) {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        a {
+            display: inline-block;
+            cursor: pointer;
+            margin: 0 3px;
+            padding: 2px 8px;
+            outline: none !important;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .paginate_input {
+            width: 40px;
+            border-radius: 3px;
+            // display: flex;
+            margin: 0 10px;
+            border: 1px solid lightgrey;
+            text-align: center;
+        }
+        .paginate_total {
+            margin: 0 12px 0 5px;
+        }
+        .paginate_button {
+            &.previous {
+                margin-right: 5px !important;
+            }
+            &.next {
+                margin-left: 5px;
+            }
+            &.next,
+            &.previous,
+            &.last,
+            &.first {
+                background: $color-primary !important;
+                color: #fff !important;
+                border-radius: 5px;
+                font-weight: bold !important;
+                padding: 5px 8px !important;
+            }
+            &.disabled {
+                background: lightgrey !important;
+                border: none !important;
+            }
+        }
+        a.paginate_button {
+            border: 2px solid $color-primary !important;
+            border-radius: 5px;
+            font-weight: bold;
+            background: transparent;
+            color: #0573c5 !important;
+            &.current {
+                background: $color-primary !important;
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.orders {
+    .totalSumContainer {
+        position: inherit !important;
+        width: 100%;
+        bottom: inherit !important;
+    }
+}
+
+.dataTables_paginate {
+    .paginate_button {
+        cursor: pointer;
+        &.disabled {
+            pointer-events: none;
+        }
+    }
+}
