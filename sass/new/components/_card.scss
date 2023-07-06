@@ -403,6 +403,8 @@ $gray-new-border:#F2F2F2;
         }
         &--orange {
             background: $orange;
+            cursor: default !important;
+            user-select: text !important;
             h5 {
                 color: $orangetext;
                 a {
